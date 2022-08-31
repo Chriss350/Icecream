@@ -6,7 +6,7 @@ Na komputerze musi być zainstalowana LTS-wersja [Node.js](https://nodejs.org/en
 
 ### Praca
 
-Włączyć tryp pracy.
+Włączyć tryb pracy.
 
 ```shell
 npm run dev
