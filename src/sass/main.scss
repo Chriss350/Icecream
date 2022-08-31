@@ -2,6 +2,20 @@
  * Główny plik dla stylów.
  * Wszystkie partials podłączamy tutaj.
  */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap');
 
+body {
+  font-family: 'DM Sans', sans-serif;
+}
+
+@import './utils/vars';
 // Style dla pliku z przykładem HTML fragmentu
-@import './example';
+
+@import './components/header';
+@import './components/products';
+@import './components/about';
+@import './components/adventages';
+@import './components/gallery';
+@import './components/customer_reviews';
+@import './components/contacts';
+@import './components/footer';
