@@ -70,12 +70,11 @@
     color: #000000;
   }
 }
+
 @media screen and (min-width: 768px) {
   .splide {
     &__opinion-box {
-      background: #fafafa;
       padding: 47px 89px;
-      margin-bottom: 30px;
     }
   }
 }
