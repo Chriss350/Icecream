@@ -1,5 +1,6 @@
 $aboutBackground: #FFF5F6;
 $aboutSubtitle: #FFA5BA;
+$aboutTitle: #D41443;
 
 h2,
 ul,
@@ -50,7 +51,7 @@ p {
   font-weight: 400;
   font-size: 34px;
   line-height: 1.145;
-  color: #D41443;
+  color: $aboutTitle;
   padding-top: 15px;
   font-family: 'Titan One';
   text-transform: uppercase;
@@ -99,7 +100,7 @@ p {
 @media screen and (min-device-pixel-ratio: 2),
 screen and (min-resolution: 192dpi),
 screen and (min-resolution: 2dppx) {
-  .adventages {
-    background-image: url();
+  .about {
+    background-image: url(/images/about/mobilesectionbg2x.png);
   }
 }
