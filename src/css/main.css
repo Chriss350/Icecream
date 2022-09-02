@@ -6,4 +6,100 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap");
 body {
   font-family: "DM Sans", sans-serif;
+}
+
+h2,
+ul,
+p {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.container-about {
+  min-width: 320px;
+  max-width: 100%;
+}
+
+.about {
+  min-width: 320px;
+  margin: 0 auto;
+  max-width: 100%;
+  padding: 0 20px;
+  background-color: #FFF5F6;
+  background-image: url();
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  font-family: "DM Sans";
+}
+.about__subtitle {
+  text-align: center;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.145;
+  color: #FFA5BA;
+  padding-top: 125px;
+  font-family: "Titan One";
+}
+.about__title {
+  text-align: center;
+  margin-left: auto;
+  margin-left: auto;
+  width: 200px;
+  height: 76px;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 1.145;
+  color: #D41443;
+  padding-top: 15px;
+  font-family: "Titan One";
+}
+.about__div {
+  padding-top: 26px;
+}
+.about__div-img {
+  width: 100%;
+  padding-bottom: 47px;
+}
+
+.img__desc {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.62;
+}
+.img__desc-1 {
+  color: #000000;
+  padding-bottom: 47px;
+  margin: 0 30px;
+}
+.img__desc-2 {
+  color: #907E82;
+  padding-bottom: 25px;
+  margin: 0 30px;
+}
+.img__desc-3 {
+  color: #907E82;
+  padding-bottom: 20px;
+  margin: 0 30px;
+}
+.img__btn {
+  margin: 0 30px;
+  background-color: #FFFFFF;
+  border: none;
+  border-radius: 22px;
+  color: #D41443;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.3;
+  display: flex;
+  -moz-column-gap: 14px;
+       column-gap: 14px;
+  padding: 18px 38px;
+}
+
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .adventages {
+    background-image: url();
+  }
 }/*# sourceMappingURL=main.css.map */
