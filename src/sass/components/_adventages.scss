@@ -3,12 +3,7 @@
           advantages
 
 */
-.container-advantages {
-  padding: 0;
-  background: #fff5f6;
-  width: 100%;
-  background-size: 100%;
-}
+
 .invisible {
   display: none;
 }
@@ -25,7 +20,9 @@ ul {
   margin: 0px;
 }
 .section-advantages {
-  padding: 0 20px;
+  background: #fff5f6;
+  width: 100%;
+  background-size: 100%;
 }
 
 .advantages__list {
@@ -120,9 +117,6 @@ ul {
   }
 }
 @media screen and (min-width: 768px) {
-  .section-advantages {
-    padding: 0 36px;
-  }
   .advantages__list {
     display: flex;
     column-gap: 60px;
@@ -148,9 +142,6 @@ ul {
   }
 }
 @media screen and (min-width: 1280px) {
-  .section-advantages {
-    padding: 0 115px;
-  }
   .advantages__list {
     column-gap: 30px;
     padding: 39px 0 139px 0;
