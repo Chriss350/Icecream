@@ -1,11 +1,11 @@
 <header>
   <div class="nav">
-    <img src="images/header/icecream-logo.png" alt="logo" />
+    <img class="nav__logo" src="images/header/icecream-logo.png" alt="logo" />
 
-    <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+    <button class="menu-toggle open-button js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
       <svg
-        width="24"
-        height="24"
+       width="20"
+        height="20"
         fill="currentColor"
         viewBox="0 0 20 20"
         xmlns="http://www.w3.org/2000/svg"
@@ -19,13 +19,13 @@
     </button>
   </div>
   <div class="menu-container js-menu-container" id="mobile-menu">
-    <button class="menu-toggle js-close-menu">
+    <button class="menu-toggle close-button js-close-menu">
       <svg
+       width="20"
+        height="20"
         fill="currentColor"
         viewBox="0 0 20 20"
         xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
       >
         <path
           fill-rule="evenodd"
@@ -35,7 +35,11 @@
       </svg>
     </button>
     <div class="mobile-menu">
-      <button class="mobile-menu__button">Buy now<svg class="button__tick" width="8" height="10" viewbox="0 0 8 10"><use xlink:href="images/header/button-tick.svg#tick"></use></svg></button>
+      <button class="mobile-menu__button">
+        Buy now<svg class="button__tick" width="8" height="10" viewbox="0 0 8 10">
+          <use xlink:href="images/header/button-tick.svg#tick"></use>
+        </svg>
+      </button>
       <ul class="mobile-menu__list">
         <li><a href="" class="mobile-menu__link">Home</a></li>
         <li><a href="" class="mobile-menu__link">About us</a></li>
