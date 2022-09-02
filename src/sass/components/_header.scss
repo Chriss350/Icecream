@@ -2,18 +2,100 @@ $mainBackgroundColor: #d41443;
 $mainBackgroundColorMiddle: #e17992;
 $mainBackgroundColorLight: #ffb8ca;
 $maincolor: #ffffff;
+.header {
+  background-color: $mainBackgroundColorLight;
+  height: 502px;
+  background-image: url(../images/header/nav-picture-mobile.png);
+  background-repeat: no-repeat;
+  background-position: 36px 83px;
+  
+}
 .nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 
-  background-color: $mainBackgroundColorLight;
-  height: 502px;
   &__logo {
     width: 200px;
     height: 50px;
     padding-top: 6px;
     padding-left: 20px;
+  }
+  &__main {
+    padding-top: 137px;
+    padding-left: 20px;
+  }
+  &__buttons {
+    display: flex;
+    margin-top: 19px;
+  }
+  &__motto {
+    width: 218px;
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 29.77px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $maincolor;
+    margin: 0;
+    padding: 0;
+    p {
+      padding: 0;
+      margin: 0;
+    }
+
+    &--accent {
+      font-size: 48px;
+      line-height: 46.32px;
+      color: $mainBackgroundColor;
+    }
+  }
+}
+.buttons {
+  &__products {
+    background: $mainBackgroundColor;
+
+    border-radius: 20px;
+    border: none;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 61.2px;
+    height: 24px;
+    margin-right: 8px;
+  }
+  &__about {
+    background: $maincolor;
+
+    border-radius: 20px;
+    border: none;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 82.8px;
+    height: 24px;
+  }
+  &__link {
+    &--products {
+      color: $maincolor;
+      text-decoration: none;
+    }
+    &--about {
+      text-decoration: none;
+      color: $mainBackgroundColor;
+    }
   }
 }
 //mobile-menu//
