@@ -1,0 +1,64 @@
+/*
+
+          ADVENTAGES
+
+*/
+
+.unvisible {
+  display: none;
+}
+h1,
+h2,
+h3,
+p,
+ul {
+  font-style: normal;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+.adventages {
+  width: 100%;
+  padding: 0 20px;
+  background-color: #fff5f6;
+  &__name-one {
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.145;
+    color: #ffa5ba;
+    padding-top: 125px;
+  }
+  &__name-two {
+    text-align: center;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 1.145;
+    color: #d41443;
+    padding-top: 15px;
+  }
+}
+.adventages__div {
+  padding-top: 26px;
+}
+.adventages__div-img {
+  width: 100%;
+}
+.img {
+  &__desc {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.62;
+    &-1 {
+      color: #000000;
+    }
+    &-2 {
+      color: #907e82;
+    }
+    &-3 {
+      color: #907e82;
+    }
+  }
+}
