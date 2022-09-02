@@ -1,34 +1,42 @@
+$mainBackgroundColor: #d41443;
+$mainBackgroundColorMiddle: #e17992;
+$mainBackgroundColorLight: #ffb8ca;
+$maincolor: #ffffff;
 .nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 6px 20px 0 20px;
+
+  background-color: $mainBackgroundColorLight;
+  height: 502px;
+  &__logo {
+    width: 200px;
+    height: 50px;
+    padding-top: 6px;
+    padding-left: 20px;
+  }
 }
 //mobile-menu//
 .menu-toggle {
-  min-height: 40px;
-  min-width: 40px;
+  height: 20px;
+  width: 20px;
   display: flex;
-  align-items: center;
   justify-content: center;
-
-  margin: 0;
   padding: 0;
   background-color: transparent;
   cursor: pointer;
   border: none;
   border-radius: 50%;
   outline: none;
-  stroke-width: 1px;
 }
 
 .menu-container {
   position: fixed;
   top: 0;
-  left: 0;
-  width: 100vw;
+  right: 0;
+  width: 250px;
   height: 100vh;
-  background-color: #e17992;
+  background-color: $mainBackgroundColorMiddle;
   z-index: 999;
 
   transform: translateX(100%);
@@ -41,9 +49,8 @@
 
 .menu-container .menu-toggle {
   position: absolute;
-  top: 16px;
-  right: 16px;
-  color: #fff;
+  right: 20px;
+  color: $maincolor;
 }
 
 .mobile-menu {
@@ -57,7 +64,7 @@
   &__link {
     display: block;
     padding-top: 22px;
-    color: #fff;
+    color: $maincolor;
     text-decoration: none;
     font-family: 'DM Sans';
     font-style: normal;
@@ -68,8 +75,8 @@
   &__button {
     width: 209px;
     height: 44px;
-    color: #d41443;
-    background-color: #fff;
+    color: $mainBackgroundColor;
+    background-color: $maincolor;
     border: none;
     border-radius: 22px;
     font-family: 'DM Sans';
@@ -88,6 +95,16 @@
   }
 }
 .mobile-menu__link:hover {
-  color: #d41443;
+  color: $mainBackgroundColor;
+}
+.open-button {
+  color: $mainBackgroundColor;
+  stroke: 1px;
+  margin-top: 18px;
+  margin-right: 20px;
+}
+.close-button {
+  color: $maincolor;
+  margin-top: 23px;
 }
 //

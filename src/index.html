@@ -36,24 +36,31 @@
       new Splide('.splide', { type: 'loop', speed: 500, autoplay: true, interval: 3000 }).mount();
     </script>
 
-    <script src="./scripts/lightgallery/lightgallery.umd.js"></script>
-    <script src="./scripts/lightgallery/lightgallery.min.js"></script>
-
-    <!-- lightgallery plugins -->
-    <script src="./scripts/lightgallery/plugins/thumbnail/lg-thumbnail.umd.js"></script>
-    <script src="./scripts/lightgallery/plugins/zoom/lg-zoom.umd.js"></script>
-
-    <script type="text/javascript">
+    <!-- Gallery scripts -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.6.0/lightgallery.min.js"
+      integrity="sha512-2Vd6dnkrqkfNnWC9qlNhcy3IaWYwggi4xW/98lt76TfBOvzhWLCCrxELko/qFiwgsZRn1jd5MbtcF8cgBmkuDg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.6.0/plugins/thumbnail/lg-thumbnail.min.js"
+      integrity="sha512-OxvyFPsKvn4jSS6/JSGrSf88FFeT2LKQX2iUddcPXhvwbQMIzcI9JxiwZlZsmcISRjTIJ4LU3hT4deiLjs8CAw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
       lightGallery(document.getElementById('lightgallery'), {
         plugins: [lgThumbnail],
         licenseKey: 'your_license_key',
         speed: 500,
       });
     </script>
-    =======
+    <!-- End Gallery scripts -->
+
+   
     <!-- Skrypt jest na samym dole kodu. On juz ma w sobie podłączony SAAS plik. -->
     <script src="./index.js"></script>
-    >>>>>>> Stashed changes
 </body>
-
 </html>
+
