@@ -8,18 +8,12 @@ p {
   margin: 0;
 }
 
-// .container-about {
-//   min-width: 320px;
-//   max-width: 100%;
-// }
-
 .about {
   min-width: 320px;
   margin: 0 auto;
   max-width: 100%;
-  // padding: 0 20px;
   background-color: $aboutBackground;
-  background-image: url();
+  background-image: url(/images/about/mobilesectionbg.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
