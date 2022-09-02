@@ -27,7 +27,7 @@
             <p class="div-item__desc-3">Aliquam erat volutpat. Aenean accumsan.</p>
           </li>
           <li>
-            <button class="div-item__btn" type="button">
+            <button class="div-item__btn" type="button" about-modal-open>
               <p class="div-item__btn-text">Read more</p>
               <svg class="div-item__btn-svg">
                 <use xlink:href="./images/about/icons.svg#icon-button-svg"></use>
@@ -39,4 +39,15 @@
       </li>
     </ul>
   </div>
+  <div class="about-read-more is-hidden" about-modal>
+    <div class="about-read-more__modal">
+      <div class="about-read-more__button-close" about-modal-close>
+        <svg width="18" height="18" viewBox="0 0 18 18" class="about-read-more__icon-close" data-modal-close>
+          <use xlink:href="./images/about/icons.svg#icon-close-black">
+          </use>
+        </svg>
+      </div>
+    </div>
+
   </div>
+  <script src="./scripts/about-modal/about-modal.js"></script>
