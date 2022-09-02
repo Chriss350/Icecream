@@ -1,4 +1,5 @@
 $aboutBackground: #FFF5F6;
+$aboutSubtitle: #FFA5BA;
 
 h2,
 ul,
@@ -15,44 +16,43 @@ p {
   background-color: $aboutBackground;
   background-image: url(/images/about/mobilesectionbg.png);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: bottom 5% right 50%;
   background-size: 100%;
   font-family: 'DM Sans';
-
-  &__subtitle {
-    text-align: center;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.145;
-    color: #FFA5BA;
-    padding-top: 125px;
-    font-family: 'Titan One';
-  }
-
-  &__title {
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    width: 200px;
-    height: 76px;
-    font-weight: 400;
-    font-size: 34px;
-    line-height: 1.145;
-    color: #D41443;
-    padding-top: 15px;
-    font-family: 'Titan One';
-  }
-
-  &__div {
-    padding-top: 26px;
-  }
-
-  &__div-img {
-    width: 100%;
-    padding-bottom: 47px;
-  }
 }
 
+.about__div-img {
+  width: 100%;
+  padding-bottom: 47px;
+}
+
+.about__div {
+  padding-top: 26px;
+}
+
+.about__subtitle {
+  text-align: center;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.145;
+  color: $aboutSubtitle;
+  padding-top: 125px;
+  font-family: 'Titan One';
+}
+
+.about__title {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  height: 76px;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 1.145;
+  color: #D41443;
+  padding-top: 15px;
+  font-family: 'Titan One';
+}
 
 .img {
   &__desc {
