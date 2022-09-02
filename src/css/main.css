@@ -284,7 +284,6 @@ p {
   background-repeat: no-repeat;
   background-position: bottom 5% right 50%;
   background-size: 100%;
-  font-family: "DM Sans";
 }
 
 .about__logo {
@@ -322,29 +321,35 @@ p {
   text-transform: uppercase;
 }
 
-.img__desc {
+.div-item__desc {
   font-weight: 500;
   font-size: 12px;
   line-height: 1.62;
 }
-.img__desc-1 {
+.div-item__desc-1 {
   color: #000000;
   padding-bottom: 47px;
   margin: 0 30px;
 }
-.img__desc-2 {
+.div-item__desc-2 {
   color: #907E82;
   padding-bottom: 25px;
   margin: 0 30px;
 }
-.img__desc-3 {
+.div-item__desc-3 {
   color: #907E82;
   padding-bottom: 20px;
   margin: 0 30px;
 }
 
-.img__btn {
+.div-item__btn {
   margin: 0 30px;
+  padding: 18px 0px 18px 38px;
+  width: 176px;
+  height: 44px;
+  display: inline-flex;
+  text-align: center;
+  align-items: center;
   background-color: #FFFFFF;
   border: none;
   border-radius: 22px;
@@ -352,10 +357,18 @@ p {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.3;
-  display: flex;
-  -moz-column-gap: 14px;
-       column-gap: 14px;
-  padding: 18px 38px;
+}
+.div-item__btn:hover {
+  background-color: #ECEBEB;
+}
+
+.div-item__btn-text {
+  margin-right: 13.63px;
+}
+
+.div-item__btn-svg {
+  width: 7px;
+  height: 13px;
 }
 
 @media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
