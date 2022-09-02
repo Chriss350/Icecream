@@ -439,6 +439,37 @@ p {
   transition: opacity 5s, visibility 5s;
 }
 
+.read-more {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.read-more__subtitle {
+  text-align: center;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.145;
+  color: #FFA5BA;
+  padding-top: 125px;
+  font-family: "Titan One";
+  text-transform: uppercase;
+}
+
+.read-more__title {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  height: 76px;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 1.145;
+  color: #D41443;
+  padding-top: 15px;
+  font-family: "Titan One";
+  text-transform: uppercase;
+}
+
 @media screen and (max-width: 479px) {
   .about-read-more__modal {
     width: calc(100% - 30px);
