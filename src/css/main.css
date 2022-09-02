@@ -280,7 +280,7 @@ p {
   margin: 0 auto;
   max-width: 100%;
   background-color: #FFF5F6;
-  background-image: url(/images/about/about-mobilesectionbg.png);
+  background-image: url(../images/about/about-mobilesectionbg.png);
   background-repeat: no-repeat;
   background-position: bottom 5% right 50%;
   background-size: 100%;
@@ -360,7 +360,7 @@ p {
 
 @media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .about {
-    background-image: url(/images/about/about-mobilesectionbg2x.png);
+    background-image: url(../images/about/about-mobilesectionbg2x.png);
   }
 }
 /*
