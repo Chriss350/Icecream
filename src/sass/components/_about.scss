@@ -21,6 +21,7 @@ p {
   background-size: 100%;
   font-family: 'DM Sans';
 }
+
 .about__logo {
   padding-top: 26px;
   padding-bottom: 47px;
@@ -58,32 +59,28 @@ p {
   text-transform: uppercase;
 }
 
-.img {
-  &__desc {
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.62;
+.img__desc {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.62;
 
-    &-1 {
-      color: #000000;
-      padding-bottom: 47px;
-      margin: 0 30px;
-    }
-
-    &-2 {
-      color: #907E82;
-      padding-bottom: 25px;
-      margin: 0 30px;
-    }
-
-    &-3 {
-      color: #907E82;
-      padding-bottom: 20px;
-      margin: 0 30px;
-    }
+  &-1 {
+    color: #000000;
+    padding-bottom: 47px;
+    margin: 0 30px;
   }
 
+  &-2 {
+    color: #907E82;
+    padding-bottom: 25px;
+    margin: 0 30px;
+  }
 
+  &-3 {
+    color: #907E82;
+    padding-bottom: 20px;
+    margin: 0 30px;
+  }
 }
 
 .img__btn {
