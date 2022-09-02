@@ -1,27 +1,46 @@
-<header>
-  <div class="nav">
-    <img class="nav__logo" src="images/header/icecream-logo.png" alt="logo" />
-
-    <button class="menu-toggle open-button js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-      <svg
-       width="20"
-        height="20"
-        fill="currentColor"
-        viewBox="0 0 20 20"
-        xmlns="http://www.w3.org/2000/svg"
+<div>
+  <div class="header">
+    <div class="nav">
+      <img class="nav__logo" src="images/header/icecream-logo.png" alt="logo" />
+      <button
+        class="menu-toggle open-button js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
       >
-        <path
-          fill-rule="evenodd"
-          d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-          clip-rule="evenodd"
-        ></path>
-      </svg>
-    </button>
+        <svg
+          width="20"
+          height="20"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+    </div>
+
+    <div class="nav__main">
+      <div class="nav__motto">
+        <p>Ice cream made with</p>
+        <p class="nav__motto--accent">passion</p>
+      </div>
+      <div class="nav__buttons">
+        <button class="buttons__products">
+          <a class="buttons__link--products" href="">Products</a></button
+        ><button class="buttons__about">
+          <a class="buttons__link--about" href="">How it's made?</a>
+        </button>
+      </div>
+    </div>
   </div>
   <div class="menu-container js-menu-container" id="mobile-menu">
     <button class="menu-toggle close-button js-close-menu">
       <svg
-       width="20"
+        width="20"
         height="20"
         fill="currentColor"
         viewBox="0 0 20 20"
@@ -49,4 +68,4 @@
       </ul>
     </div>
   </div>
-</header>
+</div>
