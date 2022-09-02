@@ -14,18 +14,94 @@ body {
   padding: 0 20px;
 }
 
+.header {
+  background-color: #ffb8ca;
+  height: 502px;
+  background-image: url(../images/header/nav-picture-mobile.png);
+  background-repeat: no-repeat;
+  background-position: 36px 83px;
+}
+
 .nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-color: #ffb8ca;
-  height: 502px;
 }
 .nav__logo {
   width: 200px;
   height: 50px;
   padding-top: 6px;
   padding-left: 20px;
+}
+.nav__main {
+  padding-top: 137px;
+  padding-left: 20px;
+}
+.nav__buttons {
+  display: flex;
+  margin-top: 19px;
+}
+.nav__motto {
+  width: 218px;
+  font-family: "Titan One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 29.77px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+.nav__motto p {
+  padding: 0;
+  margin: 0;
+}
+.nav__motto--accent {
+  font-size: 48px;
+  line-height: 46.32px;
+  color: #d41443;
+}
+
+.buttons__products {
+  background: #d41443;
+  border-radius: 20px;
+  border: none;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 61.2px;
+  height: 24px;
+  margin-right: 8px;
+}
+.buttons__about {
+  background: #ffffff;
+  border-radius: 20px;
+  border: none;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 82.8px;
+  height: 24px;
+}
+.buttons__link--products {
+  color: #ffffff;
+  text-decoration: none;
+}
+.buttons__link--about {
+  text-decoration: none;
+  color: #d41443;
 }
 
 .menu-toggle {
@@ -280,20 +356,20 @@ p {
   margin: 0 auto;
   max-width: 100%;
   background-color: #FFF5F6;
-  background-image: url(/images/about/mobilesectionbg.png);
+  background-image: url(../images/about/about-mobilesectionbg.png);
   background-repeat: no-repeat;
   background-position: bottom 5% right 50%;
   background-size: 100%;
   font-family: "DM Sans";
 }
 
-.about__div-img {
-  width: 100%;
+.about__logo {
+  padding-top: 26px;
   padding-bottom: 47px;
 }
 
-.about__div {
-  padding-top: 26px;
+.about__logo-img {
+  width: 100%;
 }
 
 .about__subtitle {
@@ -342,6 +418,7 @@ p {
   padding-bottom: 20px;
   margin: 0 30px;
 }
+
 .img__btn {
   margin: 0 30px;
   background-color: #FFFFFF;
@@ -357,8 +434,8 @@ p {
 }
 
 @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
-  .adventages {
-    background-image: url();
+  .about {
+    background-image: url(../images/about/about-mobilesectionbg2x.png);
   }
 }
 /*
@@ -394,28 +471,25 @@ ul {
   padding: 39px 0 97px 0;
 }
 .advantages__list-elem-721::before {
-  content: "";
-  background: url(/images/advantages/721-img.png);
+  content: url(/images/advantages/721-img.png);
   width: 33px;
   height: 50px;
   bottom: 16px;
-  display: block;
+  display: inline-block;
 }
 .advantages__list-elem-16::before {
-  content: "";
-  background: url(/images/advantages/16kg-img.png);
+  content: url(/images/advantages/16kg-img.png);
   width: 50px;
   height: 50px;
   bottom: 16px;
-  display: block;
+  display: inline-block;
 }
 .advantages__list-elem-84::before {
-  content: "";
-  background: url(/images/advantages/84-img.png);
+  display: inline-block;
+  content: url(/images/advantages/84-img.png);
   width: 44px;
   height: 50px;
   bottom: 16px;
-  display: block;
 }
 .advantages__list-elem-name {
   padding-bottom: 25px;
@@ -433,28 +507,6 @@ ul {
   padding-right: 50px;
 }
 
-@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
-  .advantages__list-elem-721::before {
-    background: url(/images/advantages/721-imgx2.png);
-  }
-  .advantages__list-elem-16::before {
-    background: url(/images/advantages/16kg-imgx2.png);
-  }
-  .advantages__list-elem-84::before {
-    background: url(/images/advantages/84-imgx2.png);
-  }
-}
-@media screen and (min-device-pixel-ratio: 3), screen and (min-resolution: 192dpi), screen and (min-resolution: 3dppx) {
-  .advantages__list-elem-721::before {
-    background: url(/images/advantages/721-imgx3.png);
-  }
-  .advantages__list-elem-16::before {
-    background: url(/images/advantages/16kg-imgx3.png);
-  }
-  .advantages__list-elem-84::before {
-    background: url(/images/advantages/84-imgx3.png);
-  }
-}
 @media screen and (min-width: 768px) {
   .advantages__list {
     display: flex;
@@ -596,15 +648,18 @@ ul {
   width: 85px;
   display: block;
   margin: 0 auto;
+  overflow: hidden;
+  border-radius: 50%;
 }
 .splide__opinion-box {
   background: #fafafa;
-  padding: 43px 60px;
+  padding: 42px 60px;
   margin-bottom: 30px;
 }
 .splide__opinion {
   padding-left: 20px;
   padding-right: 20px;
+  padding-bottom: 2px;
   font-family: "DM Sans";
   font-style: normal;
   font-weight: 500;
@@ -613,7 +668,7 @@ ul {
   text-align: center;
   letter-spacing: 0.04em;
   color: #000000;
-  background: repeating-linear-gradient(#fafafa, #fafafa 29px, rgb(225, 225, 225) 29px, rgb(225, 225, 225) 29.754px);
+  background-image: repeating-linear-gradient(to bottom, #fafafa, #fafafa 28px, rgb(225, 225, 225) 28px, rgb(225, 225, 225) 29.76px);
   background-origin: content-box;
   width: 100%;
   position: relative;
@@ -646,12 +701,34 @@ ul {
   line-height: 186%;
   text-align: center;
   color: #000000;
-  margin-bottom: 35px;
+}
+
+.splide__pagination__home {
+  margin: 18px;
+  height: 12px;
+  width: 12px;
+  background: #d9d9d9;
+}
+
+.splide__pagination__home.is-active::before {
+  content: "";
+  position: relative;
+  top: -2px;
+  background-image: url(../images/customer_reviews/home.svg);
+  background-position: center;
+  display: inline-block;
+  width: 12.4px;
+  height: 12px;
+}
+
+.splide__pagination.splide__home {
+  position: static;
+  justify-content: center;
 }
 
 @media screen and (min-width: 768px) {
   .splide__opinion-box {
-    padding: 47px 89px;
+    padding: 46px 89px;
   }
   .splide__container {
     padding-left: 77px;
