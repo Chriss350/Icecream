@@ -1,0 +1,59 @@
+{
+  "_from": "lightgallery",
+  "_id": "lightgallery@2.6.0",
+  "_inBundle": false,
+  "_integrity": "sha512-D1YJvPkGSrv6rqLzFGGl7CII4CiZWD3YtYjC3u256L0qk280YIzC9CINzOQlnRKQDTJJzfEa1PDgGO3Cb6ORSQ==",
+  "_location": "/lightgallery",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "lightgallery",
+    "name": "lightgallery",
+    "escapedName": "lightgallery",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/lightgallery/-/lightgallery-2.6.0.tgz",
+  "_shasum": "2ac12433706d05a484b47ee60a7331a6d442c273",
+  "_spec": "lightgallery",
+  "_where": "C:\\Users\\szymc\\desktop\\grid",
+  "author": {
+    "name": "Sachin Neravath",
+    "email": "sachi77n@gmail.com",
+    "url": "https://github.com/sachinchoolur"
+  },
+  "bugs": {
+    "url": "https://github.com/sachinchoolur/lightGallery/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "lightGallery is a feature-rich, modular JavaScript gallery plugin for building beautiful image and video galleries for the web and the mobile",
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "homepage": "https://www.lightgalleryjs.com/",
+  "keywords": [
+    "JavaScript",
+    "Gallery",
+    "Video",
+    "slider",
+    "lightBox"
+  ],
+  "license": "GPLv3",
+  "main": "lightgallery.umd.js",
+  "min": "lightgallery.min.js",
+  "module": "lightgallery.es5.js",
+  "name": "lightgallery",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sachinchoolur/lightGallery.git"
+  },
+  "typings": "index.d.ts",
+  "version": "2.6.0"
+}

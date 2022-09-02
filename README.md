@@ -1,4 +1,6 @@
-# parcel-project-template
+# Icecream
+
+https://chriss350.github.io/Icecream/
 
 ## Zalezności
 
