@@ -1,5 +1,6 @@
 $aboutBackground: #FFF5F6;
 $aboutSubtitle: #FFA5BA;
+$aboutTitle: #D41443;
 
 h2,
 ul,
@@ -14,20 +15,20 @@ p {
   margin: 0 auto;
   max-width: 100%;
   background-color: $aboutBackground;
-  background-image: url(/images/about/mobilesectionbg.png);
+  background-image: url(../images/about/about-mobilesectionbg.png);
   background-repeat: no-repeat;
   background-position: bottom 5% right 50%;
   background-size: 100%;
   font-family: 'DM Sans';
 }
 
-.about__div-img {
-  width: 100%;
+.about__logo {
+  padding-top: 26px;
   padding-bottom: 47px;
 }
 
-.about__div {
-  padding-top: 26px;
+.about__logo-img {
+  width: 100%;
 }
 
 .about__subtitle {
@@ -50,56 +51,54 @@ p {
   font-weight: 400;
   font-size: 34px;
   line-height: 1.145;
-  color: #D41443;
+  color: $aboutTitle;
   padding-top: 15px;
   font-family: 'Titan One';
   text-transform: uppercase;
 }
 
-.img {
-  &__desc {
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.62;
+.img__desc {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.62;
 
-    &-1 {
-      color: #000000;
-      padding-bottom: 47px;
-      margin: 0 30px;
-    }
-
-    &-2 {
-      color: #907E82;
-      padding-bottom: 25px;
-      margin: 0 30px;
-    }
-
-    &-3 {
-      color: #907E82;
-      padding-bottom: 20px;
-      margin: 0 30px;
-    }
-  }
-
-  &__btn {
+  &-1 {
+    color: #000000;
+    padding-bottom: 47px;
     margin: 0 30px;
-    background-color: #FFFFFF;
-    border: none;
-    border-radius: 22px;
-    color: #D41443;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.3;
-    display: flex;
-    column-gap: 14px;
-    padding: 18px 38px;
   }
+
+  &-2 {
+    color: #907E82;
+    padding-bottom: 25px;
+    margin: 0 30px;
+  }
+
+  &-3 {
+    color: #907E82;
+    padding-bottom: 20px;
+    margin: 0 30px;
+  }
+}
+
+.img__btn {
+  margin: 0 30px;
+  background-color: #FFFFFF;
+  border: none;
+  border-radius: 22px;
+  color: #D41443;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.3;
+  display: flex;
+  column-gap: 14px;
+  padding: 18px 38px;
 }
 
 @media screen and (min-device-pixel-ratio: 2),
 screen and (min-resolution: 192dpi),
 screen and (min-resolution: 2dppx) {
-  .adventages {
-    background-image: url();
+  .about {
+    background-image: url(../images/about/about-mobilesectionbg2x.png);
   }
 }
