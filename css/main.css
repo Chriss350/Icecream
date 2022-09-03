@@ -477,12 +477,18 @@ ul {
   bottom: 16px;
   display: inline-block;
 }
+.advantages__list-elem-16 {
+  padding-top: 38px;
+}
 .advantages__list-elem-16::before {
   content: url(/images/advantages/16kg-img.png);
   width: 50px;
   height: 50px;
   bottom: 16px;
   display: inline-block;
+}
+.advantages__list-elem-84 {
+  padding-top: 38px;
 }
 .advantages__list-elem-84::before {
   display: inline-block;
@@ -517,6 +523,7 @@ ul {
     padding: 66px 0 140px 0;
   }
   .advantages__list-elem-721, .advantages__list-elem-16, .advantages__list-elem-84 {
+    padding-top: 0;
     flex-basis: calc(33.3333333333% - 60px);
   }
   .advantages__list-elem-name {
@@ -536,6 +543,7 @@ ul {
     padding: 39px 0 139px 0;
   }
   .advantages__list-elem-721, .advantages__list-elem-16, .advantages__list-elem-84 {
+    padding-top: 0;
     flex-basis: calc(33.3333333333% - 30px);
   }
   .advantages__list-elem-name {

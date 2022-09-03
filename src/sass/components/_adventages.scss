@@ -38,6 +38,7 @@ ul {
     }
   }
   &-elem-16 {
+    padding-top: 38px;
     &::before {
       content: url(/images/advantages/16kg-img.png);
       width: 50px;
@@ -47,6 +48,7 @@ ul {
     }
   }
   &-elem-84 {
+    padding-top: 38px;
     &::before {
       display: inline-block;
       content: url(/images/advantages/84-img.png);
@@ -83,6 +85,7 @@ ul {
     &-elem-721,
     &-elem-16,
     &-elem-84 {
+      padding-top: 0;
       flex-basis: calc((100% / 3) - 60px);
     }
     &-elem-name {
@@ -104,6 +107,7 @@ ul {
     &-elem-721,
     &-elem-16,
     &-elem-84 {
+      padding-top: 0;
       flex-basis: calc((100% / 3) - 30px);
     }
     &-elem-name {
