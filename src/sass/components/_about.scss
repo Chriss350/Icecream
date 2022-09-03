@@ -262,7 +262,11 @@ screen and (min-resolution: 3dppx) {
   }
 
   .about__div-items {
-    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 106px;
+    column-gap: 35px
   }
 
   .div-item__desc {

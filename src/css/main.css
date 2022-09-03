@@ -567,7 +567,12 @@ p {
 }
 @media screen and (min-width: 1280px) {
   .about__div-items {
-    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 106px;
+    -moz-column-gap: 35px;
+         column-gap: 35px;
   }
 }
 @media screen and (min-width: 1280px) {
