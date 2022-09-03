@@ -4,7 +4,7 @@ $footerLogoAccent: #d41443;
 $footerIconBackground: #fea5bb;
 $footerContact: #000;
 $footerCopyrightBorder: #e1e1e1;
-$footerCopyright: #907E82;
+$footerCopyright: #907e82;
 .footer {
   width: 100vw;
   &__motto {
@@ -69,7 +69,7 @@ $footerCopyright: #907E82;
       font-size: 13px;
       font-weight: 700;
       line-height: 24px;
-
+      text-decoration: none;
       color: $footerLogoAccent;
     }
   }
