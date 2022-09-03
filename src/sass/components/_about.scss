@@ -1,0 +1,425 @@
+$aboutBackground: #FFF5F6;
+$aboutSubtitle: #FFA5BA;
+$aboutTitleAndButtonText: #D41443;
+$aboutButtonHover: #ECEBEB;
+$aboutModalAreaBackgroundColor: rgba(0, 0, 0, 0.2);
+$aboutModalBackgroundColor: #FFF5F6;
+$aboutModalBoxShadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+  0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+$aboutModalButtonCloseBorderColor: #0000001a;
+// $aboutModalButtonHoverFocus: rgb(252, 253, 253);
+$aboutModalHoverSvg: #FFA5BA;
+$aboutModalButtonHover: #ECEBEB;
+
+h2,
+ul,
+p {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.about {
+  min-width: 320px;
+  margin: 0 auto;
+  max-width: 100%;
+  background-color: $aboutBackground;
+  background-image: url(../images/about/about-mobilesectionbg.png);
+  background-repeat: no-repeat;
+  background-position: bottom 3% right 50%;
+  background-size: 100%;
+
+}
+
+.about__logo {
+  padding-top: 26px;
+  padding-bottom: 47px;
+}
+
+.about__logo-img {
+  width: 100%;
+}
+
+.about__subtitle {
+  text-align: center;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.145;
+  color: $aboutSubtitle;
+  padding-top: 125px;
+  font-family: 'Titan One';
+  text-transform: uppercase;
+}
+
+.about__title {
+  text-align: center;
+  margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  height: 76px;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 1.147;
+  letter-spacing: 0.04em;
+  color: $aboutTitleAndButtonText;
+  font-family: 'Titan One';
+  text-transform: uppercase;
+}
+
+.div-item__desc {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.62;
+
+  &-1 {
+    color: #000000;
+    padding-bottom: 47px;
+    margin: 0 30px;
+  }
+
+  &-2 {
+    color: #907E82;
+    padding-bottom: 25px;
+    margin: 0 30px;
+  }
+
+  &-3 {
+    color: #907E82;
+    padding-bottom: 20px;
+    margin: 0 30px;
+  }
+}
+
+.div-item__btn {
+  margin: 0 30px;
+  padding: 18px 0px 18px 38px;
+  width: 176px;
+  height: 44px;
+  display: inline-flex;
+  text-align: center;
+  align-items: center;
+  background-color: #FFFFFF;
+  border: none;
+  border-radius: 22px;
+  color: $aboutTitleAndButtonText;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.3;
+
+  &:hover {
+    background-color: $aboutButtonHover;
+  }
+}
+
+.div-item__btn-text {
+  margin-right: 13.63px;
+}
+
+.div-item__btn-svg {
+  width: 7px;
+  height: 13px;
+}
+
+
+@media screen and (min-device-pixel-ratio: 2),
+screen and (min-resolution: 192dpi),
+screen and (min-resolution: 2dppx) {
+  .about {
+    background-image: url(../images/about/about-mobilesectionbg2x.png);
+  }
+}
+
+@media screen and (min-width:481px) {
+  .about__title {
+    min-width: 100%;
+  }
+}
+
+@media screen and (min-width:768px) and (max-width:1279px) {
+  .about {
+    background-image: none;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .about__subtitle {
+    font-size: 26px;
+    line-height: 1.154;
+    padding-top: 130px;
+  }
+
+  .about__title {
+    margin-top: 16px;
+    width: 100%;
+    height: 55px;
+    font-size: 48px;
+    line-height: 1.146;
+  }
+
+  .about__items {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    // column-gap:17px;
+  }
+
+  .about__item {
+    &:not(:last-child) {
+      margin-right: 17px;
+    }
+
+    flex-basis: calc((100% / 2) - 17px);
+  }
+}
+
+@media screen and (min-width:1280px) {
+  .about__subtitle {
+    font-size: 30px;
+    line-height: 1.133;
+    padding-top: 125px;
+  }
+
+  .about__title {
+    margin-top: 15px;
+    width: 100%;
+    height: 55px;
+    font-size: 58px;
+    line-height: 1.138;
+    letter-spacing: 0.06em;
+  }
+
+  .about__items {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    // column-gap:17px;
+  }
+
+  .about__item {
+    &:not(:last-child) {
+      margin-right: 74px;
+    }
+
+    flex-basis: calc((100% / 2) - 74px);
+  }
+}
+
+// SECTION ABOUT MODAL READ MORE
+.about-read-more {
+  position: fixed;
+  min-width: 320px;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: $aboutModalAreaBackgroundColor;
+  transform: translate(0, 0);
+  // animacja na desctop
+  animation: fadeIn 750ms cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+
+}
+
+.about-read-more__modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 4px;
+  box-shadow: $aboutModalBoxShadow;
+  background-color: $aboutBackground;
+  background-image: url(../images/about/about-mobilesectionbg.png);
+  background-repeat: no-repeat;
+  background-position: bottom 3% right 50%;
+  background-size: 100%;
+  animation: slideInMobile 750ms cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+}
+
+.about-read-more__button-close {
+  position: absolute;
+  margin: 0;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: $aboutModalBackgroundColor;
+  fill: #D41443;
+  border: 1px solid $aboutModalButtonCloseBorderColor;
+  cursor: pointer;
+  transition-property: fill, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: $aboutModalButtonHover;
+    fill: $aboutModalHoverSvg;
+  }
+}
+
+.about-read-more__icon-close {
+  margin: 5px;
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: visibility 5s, opacity 5s;
+  animation: fadeOut 5s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+
+  .about-read-more__modal {
+    animation: slideOutMobile 5s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+    transition: opacity 5s, visibility 5s;
+  }
+}
+
+// ABOUT READ MORE TEXT AREA 
+.read-more {
+  position: relative;
+  margin-bottom: 20px
+}
+
+.read-more__subtitle {
+  text-align: center;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.145;
+  color: $aboutSubtitle;
+  padding-top: 20px;
+  font-family: 'Titan One';
+  text-transform: uppercase;
+}
+
+.read-more__title {
+  text-align: center;
+  margin: 15px auto;
+  width: 200px;
+  height: 76px;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 1.145;
+  color: $aboutTitleAndButtonText;
+  font-family: 'Titan One';
+  text-transform: uppercase;
+}
+
+.read-more__text-box {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 30px;
+  max-width: calc(100% - 50px);
+}
+
+@media screen and (max-width:479px) {
+  .about-read-more__modal {
+    width: calc(100% - 30px);
+    min-width: calc(320px - 30px);
+    max-width: 450px;
+    height: calc(100% - 30px);
+    max-height: 609px;
+  }
+}
+
+@media screen and (min-width:480px) and (max-width:1199px) {
+  .about-read-more__modal {
+    width: 450px;
+    height: 609px;
+  }
+}
+
+@media screen and (min-width:1200px) {
+  .about-read-more__modal {
+    width: 528px;
+    height: 581px;
+    animation: slideIn 750ms cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+  }
+
+  .is-hidden {
+    .about-read-more__modal {
+      animation: slideOut 5s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+    }
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    background: rgba(0, 0, 0, 0);
+  }
+
+  100% {
+    background: rgba(0, 0, 0, 0.4);
+  }
+
+}
+
+@keyframes fadeOut {
+  0% {
+    background: rgba(0, 0, 0, 0.4);
+  }
+
+  100% {
+    background: rgba(0, 0, 0, 0);
+  }
+
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-15000px) scale(0.75);
+  }
+
+  70% {
+    transform: translateX(-50%, -50%) scale(0.9);
+  }
+
+  100% {
+    transform: translateX(-50%, -50%) scale(1);
+  }
+}
+
+@keyframes slideOut {
+  0% {
+    transform: translateX(-50%, -50%) scale(1);
+  }
+
+  60% {
+    transform: translateX(-50%, -50%) scale(0.9);
+  }
+
+  100% {
+    transform: translateX(3000px) scale(0.5);
+  }
+}
+
+@keyframes slideInMobile {
+  0% {
+    transform: translateY(-5000px) scale(0.5);
+  }
+
+  70% {
+    transform: translateX(-50%, -50%) scale(0.8);
+  }
+
+  100% {
+    transform: translateX(-50%, -50%) scale(1);
+  }
+}
+
+@keyframes slideOutMobile {
+  0% {
+    transform: translateX(-50%, -50%) scale(1);
+  }
+
+  30% {
+    transform: translateX(-50%, -50%) scale(0.9);
+  }
+
+  100% {
+    transform: translateY(5000px) scale(0.5);
+  }
+}
