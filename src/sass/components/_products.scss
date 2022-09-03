@@ -9,7 +9,7 @@ $readmore-hover: #ECEBEB;
 .container {
     min-width: 320px;
     max-width: 1280px;
-    margin: auto;
+    margin: 0px auto;
     &--products {
         font-family: Titan One;
         font-weight: 400;
@@ -104,7 +104,7 @@ $readmore-hover: #ECEBEB;
                     top: -59%;
                 }
                 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) and (min-width: 769px) {
-                    background-image: url(../images/products/icecream-770.png);
+                    background-image: url(../images/products/icecream-670.png);
                     top: -59%;
                 }
             }
@@ -136,7 +136,7 @@ $readmore-hover: #ECEBEB;
                     top: -59%;
                 }
                 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) and (min-width: 769px) {
-                    background-image: url(../images/products/icecoffee-770.png);
+                    background-image: url(../images/products/icecoffee-670.png);
                     top: -59%;
                 }
             }
@@ -168,7 +168,7 @@ $readmore-hover: #ECEBEB;
                     top: -59%;
                 }
                 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) and (min-width: 769px) {
-                    background-image: url(../images/products/milkshake-770.png);
+                    background-image: url(../images/products/milkshake-670.png);
                     top: -59%;
                 }
             }
