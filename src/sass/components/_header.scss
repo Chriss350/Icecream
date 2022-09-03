@@ -23,6 +23,7 @@ $maincolor: #ffffff;
     height: 452px;
     z-index: 0;
     position: relative;
+    overflow: hidden;
   }
   &__buttons {
     position: absolute;
