@@ -2,14 +2,10 @@ $mainBackgroundColor: #d41443;
 $mainBackgroundColorMiddle: #e17992;
 $mainBackgroundColorLight: #ffb8ca;
 $maincolor: #ffffff;
-
+//main styling
 .header {
   background-color: $mainBackgroundColorLight;
   height: 502px;
-  background-image: url(../images/header/nav-picture-mobile.png);
-  background-repeat: no-repeat;
-  background-position: 36px 83px;
-  
 }
 .nav {
   display: flex;
@@ -17,31 +13,41 @@ $maincolor: #ffffff;
   justify-content: space-between;
 
   &__logo {
-    width: 200px;
+    width: 199px;
     height: 50px;
-    padding-top: 6px;
-    padding-left: 20px;
+    margin-top: 6px;
+    margin-left: 20px;
+    z-index: 3;
   }
-  &__main {
-    padding-top: 137px;
-    padding-left: 20px;
+  &__hero {
+    height: 452px;
+    z-index: 0;
+    position: relative;
   }
   &__buttons {
+    position: absolute;
     display: flex;
-    margin-top: 19px;
+    z-index: 3;
+    top: 0;
+    margin-top: 125px;
   }
   &__motto {
+    position: absolute;
+    top: 0;
     width: 218px;
     font-family: 'Titan One';
-    font-style: normal;
+
     font-weight: 400;
     font-size: 26px;
-    line-height: 29.77px;
+    line-height: 30px;
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: $maincolor;
     margin: 0;
-    padding: 0;
+    z-index: 3;
+    margin-top: 137px;
+    margin-left: 20px;
+
     p {
       padding: 0;
       margin: 0;
@@ -49,15 +55,30 @@ $maincolor: #ffffff;
 
     &--accent {
       font-size: 48px;
-      line-height: 46.32px;
+      line-height: 46px;
       color: $mainBackgroundColor;
     }
   }
+  &__background {
+    position: absolute;
+    z-index: 2;
+    margin-top: 36px;
+    margin-left: 117px;
+    &--elipse {
+      position: absolute;
+      z-index: 1;
+      margin-top: 27px;
+      margin-left: 36px;
+      height: 344px;
+      width: 346px;
+    }
+  }
 }
+//buttons
 .buttons {
+  z-index: 3;
   &__products {
     background: $mainBackgroundColor;
-
     border-radius: 20px;
     border: none;
     font-family: 'DM Sans';
@@ -190,4 +211,3 @@ $maincolor: #ffffff;
   color: $maincolor;
   margin-top: 23px;
 }
-//
