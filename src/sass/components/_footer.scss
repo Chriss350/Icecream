@@ -6,7 +6,8 @@ $footerContact: #000;
 $footerCopyrightBorder: #e1e1e1;
 $footerCopyright: #907e82;
 .footer {
-  width: 100vw;
+  width: 100%;
+  background-color: $footerBackground;
   &__motto {
     font-family: 'Titan One';
     font-weight: 400;
