@@ -1,11 +1,20 @@
-<section class="about">
+<section class="about" id="how-it-is-made">
   <div class="container">
     <p class="about__subtitle">tradition and love</p>
     <h2 class="about__title">How it's made?</h2>
     <ul class="about__items">
       <li class="about__item">
         <div class="about__logo">
-          <img class="about__logo-img" src="./images/about/about-logo-cow-milk.png" alt="bootle of milk and cow" />
+          <picture>
+            <source alt="bootle of milk and cow" media="(min-width:1280px)"
+              srcset="./images/about/about-logo-cow-milk-dectop.png 1x, ./images/about/about-logo-cow-milk-desctopx2.png 2x, ./images/about/about-logo-cow-milk-desctopx3.png 3x" />
+            <source alt="bootle of milk and cow" media="(min-width:768px)"
+              srcset="./images/about/about-logo-cow-milk-tablet.png 1x, ./images/about/about-logo-cow-milk-tabletx2.png 2x, ./images/about/about-logo-cow-milk-tabletx3.png 3x" />
+            <source media="(min-width:480px)" class="about__logo-img" alt="bootle of milk and cow"
+              srcset="./images/about/about-logo-cow-milk.png 1x, ./images/about/about-logo-cow-milkx2.png 2x, ./images/about/about-logo-cow-milkx3.png 3x" />
+            <img class="about__logo-img" src="./images/about/about-logo-cow-milk.png" alt="bootle of milk and cow"
+              />
+          </picture>
         </div>
       </li>
       <li class="about__item">
