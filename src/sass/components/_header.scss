@@ -6,6 +6,7 @@ $maincolor: #ffffff;
 .header {
   background-color: $mainBackgroundColorLight;
   height: 502px;
+  width: 100%;
 }
 .nav {
   display: flex;
@@ -23,6 +24,7 @@ $maincolor: #ffffff;
     height: 452px;
     z-index: 0;
     position: relative;
+    overflow: hidden;
   }
   &__buttons {
     position: absolute;
@@ -69,8 +71,7 @@ $maincolor: #ffffff;
       z-index: 1;
       margin-top: 27px;
       margin-left: 36px;
-      height: 344px;
-      max-width: 100%;
+      
     }
   }
 }
