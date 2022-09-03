@@ -4,8 +4,8 @@
   background: rgb(255, 245, 246);
   background: linear-gradient(180deg, rgba(255, 245, 246, 1) 0%, rgba(255, 255, 255, 1) 100%);
   display: grid;
-  grid-template-columns: repeat(14, minmax(20px, 100%));
-  grid-template-rows: repeat(6, minmax(20px, 100%));
+  grid-template-columns: repeat(14, minmax(15px, 100%));
+  grid-template-rows: repeat(6, minmax(15px, 100%));
   gap: 1px 1px;
   grid-template-areas:
     '. . . . img4 img4 img4 img4 . . img8 img8 . .'
