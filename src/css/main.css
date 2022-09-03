@@ -450,7 +450,12 @@ p {
 
 @media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .about {
-    background-image: url(../images/about/about-mobilesectionbg2x.png);
+    background-image: url(../images/about/about-mobilesectionbgx2.png);
+  }
+}
+@media screen and (min-device-pixel-ratio: 3), screen and (-webkit-min-device-pixel-ratio: 3), screen and (min-resolution: 288dpi), screen and (min-resolution: 3dppx) {
+  .about {
+    background-image: url(../images/about/about-mobilesectionbgx3.png);
   }
 }
 @media screen and (min-width: 481px) {
@@ -478,15 +483,55 @@ p {
   }
   .about__items {
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
+    -moz-column-gap: 17px;
+         column-gap: 17px;
   }
   .about__item {
     flex-basis: calc(50% - 17px);
   }
-  .about__item:not(:last-child) {
-    margin-right: 17px;
+  .about__div-items {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .div-item__desc {
+    font-size: 14px;
+    line-height: 1.76;
+  }
+  .div-item__desc-1 {
+    padding-bottom: 20px;
+    margin-right: 16px;
+    margin-left: 0px;
+  }
+  .div-item__desc-2 {
+    padding-bottom: 25px;
+    margin-right: 16px;
+    margin-left: 0px;
+  }
+  .div-item__desc-3 {
+    padding-bottom: 20px;
+    margin-right: 16px;
+    margin-left: 0px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .about {
+    background-image: url(../images/about/about-desctopsectionbg.png);
+    background-repeat: no-repeat;
+    background-position: bottom 3% right 50%;
+    background-size: 100%;
+  }
+}
+@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+  .about {
+    background-image: url(../images/about/about-desctopsectionbgx2.png);
+  }
+}
+@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 3), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 3), screen and (min-width: 1280px) and (min-resolution: 288dpi), screen and (min-width: 1280px) and (min-resolution: 3dppx) {
+  .about {
+    background-image: url(../images/about/about-desctopsectionbgx3.png);
   }
 }
 @media screen and (min-width: 1280px) {
@@ -495,6 +540,8 @@ p {
     line-height: 1.133;
     padding-top: 125px;
   }
+}
+@media screen and (min-width: 1280px) {
   .about__title {
     margin-top: 15px;
     width: 100%;
@@ -503,17 +550,46 @@ p {
     line-height: 1.138;
     letter-spacing: 0.06em;
   }
+}
+@media screen and (min-width: 1280px) {
   .about__items {
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
+    -moz-column-gap: 74px;
+         column-gap: 74px;
   }
+}
+@media screen and (min-width: 1280px) {
   .about__item {
     flex-basis: calc(50% - 74px);
   }
-  .about__item:not(:last-child) {
-    margin-right: 74px;
+}
+@media screen and (min-width: 1280px) {
+  .about__div-items {
+    margin-bottom: 100px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .div-item__desc {
+    font-size: 16px;
+    line-height: 1.76;
+    letter-spacing: 0.04em;
+  }
+  .div-item__desc-1 {
+    padding-bottom: 20px;
+    margin-right: 97px;
+    margin-left: 0px;
+  }
+  .div-item__desc-2 {
+    padding-bottom: 25px;
+    margin-right: 97px;
+    margin-left: 0px;
+  }
+  .div-item__desc-3 {
+    padding-bottom: 20px;
+    margin-right: 97px;
+    margin-left: 0px;
   }
 }
 .about-read-more {
