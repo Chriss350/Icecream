@@ -2,13 +2,14 @@ $aboutBackground: #FFF5F6;
 $aboutSubtitle: #FFA5BA;
 $aboutTitleAndButtonText: #D41443;
 $aboutButtonHover: #ECEBEB;
-$aboutBackgroundColor: rgba(0, 0, 0, 0.2);
+$aboutModalAreaBackgroundColor: rgba(0, 0, 0, 0.2);
 $aboutModalBackgroundColor: #FFF5F6;
 $aboutModalBoxShadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
   0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 $aboutModalButtonCloseBorderColor: #0000001a;
-$aboutModalButtonIconHoverFocus: rgb(252, 253, 253);
-$hoverFocusColor: #FFA5BA;
+// $aboutModalButtonHoverFocus: rgb(252, 253, 253);
+$aboutModalHoverSvg: #FFA5BA;
+$aboutModalButtonHover: #ECEBEB;
 
 h2,
 ul,
@@ -59,7 +60,8 @@ p {
   height: 76px;
   font-weight: 400;
   font-size: 34px;
-  line-height: 1.145;
+  line-height: 1.147;
+  letter-spacing: 0.04em;
   color: $aboutTitleAndButtonText;
   font-family: 'Titan One';
   text-transform: uppercase;
@@ -128,6 +130,83 @@ screen and (min-resolution: 2dppx) {
   }
 }
 
+@media screen and (min-width:481px) {
+  .about__title {
+    min-width: 100%;
+  }
+}
+
+@media screen and (min-width:768px) and (max-width:1279px) {
+  .about {
+    background-image: none;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .about__subtitle {
+    font-size: 26px;
+    line-height: 1.154;
+    padding-top: 130px;
+  }
+
+  .about__title {
+    margin-top: 16px;
+    width: 100%;
+    height: 55px;
+    font-size: 48px;
+    line-height: 1.146;
+  }
+
+  .about__items {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    // column-gap:17px;
+  }
+
+  .about__item {
+    &:not(:last-child) {
+      margin-right: 17px;
+    }
+
+    flex-basis: calc((100% / 2) - 17px);
+  }
+}
+
+@media screen and (min-width:1280px) {
+  .about__subtitle {
+    font-size: 30px;
+    line-height: 1.133;
+    padding-top: 125px;
+  }
+
+  .about__title {
+    margin-top: 15px;
+    width: 100%;
+    height: 55px;
+    font-size: 58px;
+    line-height: 1.138;
+    letter-spacing: 0.06em;
+  }
+
+  .about__items {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    // column-gap:17px;
+  }
+
+  .about__item {
+    &:not(:last-child) {
+      margin-right: 74px;
+    }
+
+    flex-basis: calc((100% / 2) - 74px);
+  }
+}
+
 // SECTION ABOUT MODAL READ MORE
 .about-read-more {
   position: fixed;
@@ -136,7 +215,7 @@ screen and (min-resolution: 2dppx) {
   height: 100%;
   top: 0;
   left: 0;
-  background-color: $aboutBackgroundColor;
+  background-color: $aboutModalAreaBackgroundColor;
   transform: translate(0, 0);
   // animacja na desctop
   animation: fadeIn 750ms cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
@@ -167,6 +246,7 @@ screen and (min-resolution: 2dppx) {
   height: 30px;
   border-radius: 50%;
   background-color: $aboutModalBackgroundColor;
+  fill: #D41443;
   border: 1px solid $aboutModalButtonCloseBorderColor;
   cursor: pointer;
   transition-property: fill, background-color;
@@ -175,8 +255,8 @@ screen and (min-resolution: 2dppx) {
 
   &:hover,
   &:focus {
-    background-color: $aboutButtonHover;
-    fill: $hoverFocusColor;
+    background-color: $aboutModalButtonHover;
+    fill: $aboutModalHoverSvg;
   }
 }
 
