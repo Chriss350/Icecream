@@ -1,0 +1,86 @@
+$footerBackground: #fff5f6;
+$footerLogoMain: #ffa5ba;
+$footerLogoAccent: #d41443;
+$footerIconBackground: #fea5bb;
+$footerContact: #000;
+$footerCopyrightBorder: #e1e1e1;
+$footerCopyright: #907E82;
+.footer {
+  width: 100vw;
+  &__motto {
+    font-family: 'Titan One';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $footerLogoMain;
+    margin-left: 20px;
+    margin-top: 113px;
+    p {
+      padding: 0;
+      margin: 0;
+    }
+
+    &--accent {
+      font-size: 34px;
+      line-height: 39px;
+      color: $footerLogoAccent;
+    }
+  }
+  &__social-media {
+    margin-right: 21px;
+  }
+  &__list {
+    margin: 0;
+    width: 100%;
+    gap: 28px;
+    display: inline-flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 43px;
+  }
+  &__link {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50px;
+    background-color: $footerIconBackground;
+  }
+  &__icon {
+    width: 18px;
+    height: 18px;
+  }
+
+  &__phone {
+    display: flex;
+    justify-content: flex-end;
+    font-family: DM Sans;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 22px;
+    color: $footerContact;
+    margin-top: 46px;
+
+    &--accent {
+      font-family: DM Sans;
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 24px;
+
+      color: $footerLogoAccent;
+    }
+  }
+  &__copyright {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 89px;
+    border-top: 1px solid #e1e1e1;
+    margin-top: 43px;
+    color: $footerCopyright;
+  }
+}
