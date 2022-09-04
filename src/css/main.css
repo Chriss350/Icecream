@@ -536,22 +536,28 @@ p {
   text-transform: uppercase;
 }
 
-.div-item__desc {
+.div-item__desc-1 {
   font-weight: 500;
   font-size: 12px;
   line-height: 1.62;
-}
-.div-item__desc-1 {
   color: #000000;
-  padding-bottom: 35px;
-  margin: 0 30px;
-}
-.div-item__desc-2 {
-  color: #907E82;
   padding-bottom: 25px;
   margin: 0 30px;
 }
+
+.div-item__desc-2 {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.62;
+  color: #907E82;
+  padding-bottom: 15px;
+  margin: 0 30px;
+}
+
 .div-item__desc-3 {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.62;
   color: #907E82;
   padding-bottom: 20px;
   margin: 0 30px;
@@ -571,17 +577,14 @@ p {
   color: #D41443;
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.3;
+  line-height: 1.31;
 }
 .div-item__btn:hover {
   background-color: #ECEBEB;
 }
 
-.div-item__btn-text {
-  margin-right: 13.63px;
-}
-
 .div-item__btn-svg {
+  margin-left: 13.63px;
   width: 7px;
   height: 13px;
 }
@@ -652,9 +655,14 @@ p {
   .div-item__desc-3 {
     font-size: 14px;
     line-height: 1.76;
-    padding-bottom: 20px;
+    padding-bottom: 45px;
     margin-right: 16px;
     margin-left: 0px;
+  }
+  .div-item__btn {
+    margin-left: 0px;
+    padding: 18px 0px 18px 38px;
+    font-size: 16px;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -685,7 +693,7 @@ p {
 @media screen and (min-width: 1280px) {
   .about__title {
     margin-top: 15px;
-    margin-bottom: 55px;
+    margin-bottom: 65px;
     width: 100%;
     height: 55px;
     font-size: 58px;
@@ -704,7 +712,7 @@ p {
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    padding-left: 35px;
+    padding-left: 50px;
     padding-bottom: 65px;
     -moz-column-gap: 74px;
          column-gap: 74px;
@@ -719,7 +727,7 @@ p {
   .about__div-items {
     display: flex;
     flex-direction: column;
-    margin-top: 56px;
+    margin-top: 55px;
     padding-right: 20px;
     -moz-column-gap: 35px;
          column-gap: 35px;
@@ -739,8 +747,9 @@ p {
   .div-item__desc-2 {
     font-weight: 500;
     font-size: 14px;
-    line-height: 1.76;
+    line-height: 1.94;
     letter-spacing: 0.04em;
+    padding-right: 20px;
     padding-bottom: 30px;
     margin-left: 0px;
   }
@@ -749,15 +758,16 @@ p {
   .div-item__desc-3 {
     font-weight: 500;
     font-size: 14px;
-    line-height: 1.76;
+    line-height: 1.94;
     letter-spacing: 0.04em;
+    padding-bottom: 40px;
     margin-left: 0px;
   }
 }
 @media screen and (min-width: 1280px) {
   .div-item__btn {
     margin-left: 0px;
-    padding-top: 10px;
+    font-size: 16px;
   }
 }
 .about-read-more {
