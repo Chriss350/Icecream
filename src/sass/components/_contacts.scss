@@ -31,7 +31,7 @@ $franchise-hover: #ECEBEB;
         #FFF5F6 5.29%,
         #FFF5F6
       );
-      @media (min-width: 480px) {
+      @media (min-width: 768px) {
         background-image: linear-gradient(
             to bottom,
             #FFFFFF 22.5%,
@@ -52,17 +52,17 @@ $franchise-hover: #ECEBEB;
         text-align: center;
         color: $text-contacts-main;
         padding: 0px 15.625% 98px 15.625%;
-        @media (min-width: 480px) {
+        @media (min-width: 768px) {
             padding: 119px 4.6875% 165px 4.6875%;
         }
-        @media (min-width: 768px) {
+        @media (min-width: 1200px) {
             padding: 132px 9.58% 165px 9.58%;
         }
     }
 }
 
 .contacts {
-    @media (min-width: 480px) {
+    @media (min-width: 768px) {
         display: flex;
     }
     &__contact {
@@ -70,11 +70,11 @@ $franchise-hover: #ECEBEB;
         text-align: left;
     }
     &__contact:nth-child(2n) {
-        @media (min-width: 480px) {
+        @media (min-width: 768px) {
             margin-left: 2.604%;
             margin-right: 2.604%;
         }
-        @media (min-width: 768px) {
+        @media (min-width: 1200px) {
             margin-left: 2.41%;
             margin-right: 2.41%;
         }
@@ -86,7 +86,7 @@ $franchise-hover: #ECEBEB;
     }
     &__textbox {
         margin: 0px 7.15% 0px 7.15%;
-        @media (min-width: 480px) {
+        @media (min-width: 768px) {
             margin: 0px 15.17% 0px 15.17%;
         }
         &--middle {
@@ -114,14 +114,14 @@ $franchise-hover: #ECEBEB;
         }
         &--foodtruck {
             background-color: $foodtruck-background;
-            @media (min-width: 480px) {
+            @media (min-width: 768px) {
                 padding: 0px 7px;
             }
             @media (min-width: 627px) {
                 padding: 0px 16px;
             }
         }
-        @media (min-width: 480px) {
+        @media (min-width: 768px) {
             font-size: 16px;
         }
     }
@@ -132,20 +132,20 @@ $franchise-hover: #ECEBEB;
         line-height: 1.86;
         letter-spacing: 0.04em;
         color: $text-contacts-headers;
-        @media (min-width: 480px) {
+        @media (min-width: 768px) {
             font-size: 14px;
         }
-        @media (min-width: 768px) {
+        @media (min-width: 1200px) {
             font-size: 16px;
         }
     }
     &__description {
         line-height: 1.5;
         margin-bottom: 25px;
-        @media (min-width: 480px) {
+        @media (min-width: 768px) {
          font-size: 14px;   
         }
-        @media (min-width: 768px) {
+        @media (min-width: 1200px) {
             font-size: 16px;
         }
     }
@@ -155,20 +155,20 @@ $franchise-hover: #ECEBEB;
         margin-bottom: 0px;
         line-height: 1.86;
         color: $text-contacts-headers;
-        @media (min-width: 480px) {
+        @media (min-width: 768px) {
             font-size: 14px;
         }
-        @media (min-width: 768px) {
+        @media (min-width: 1200px) {
             font-size: 16px;
         }
     }
     &__hours {
         line-height: 1.86;
         color: $text-contacts-open-hours;
-        @media (min-width: 480px) {
+        @media (min-width: 768px) {
          font-size: 14px;   
         }
-        @media (min-width: 768px) {
+        @media (min-width: 1200px) {
             font-size: 16px;
         }
     }
@@ -181,7 +181,7 @@ $franchise-hover: #ECEBEB;
         @media (min-width: 627px) {
          font-size: 14px;   
         }
-        @media (min-width: 768px) {
+        @media (min-width: 1200px) {
             font-size: 16px;
         }
     }
@@ -207,7 +207,7 @@ $franchise-hover: #ECEBEB;
         background-color: $our-locations-background;
         margin-top: 54px;
         margin-bottom: 10px;
-        @media (min-width: 480px) {
+        @media (min-width: 768px) {
             display: inline;
             margin-right: 7.25px;
         }
@@ -218,7 +218,7 @@ $franchise-hover: #ECEBEB;
         &:hover, &:focus {
             background-color: $franchise-hover;
         }
-        @media (min-width: 480px) {
+        @media (min-width: 768px) {
             display: inline;
             margin-left: 7.25px;
         }
