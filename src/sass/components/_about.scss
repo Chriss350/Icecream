@@ -251,7 +251,6 @@ screen and (min-resolution: 3dppx) {
   }
 
   .about__logo {
-    // min-width: 516px;
     padding-bottom: 0px;
     padding-top: 0px;
   }
@@ -259,7 +258,6 @@ screen and (min-resolution: 3dppx) {
   .about__items {
     display: flex;
     align-items: flex-start;
-    // align-items: center;
     justify-content: center;
     padding-left: 35px;
     padding-bottom: 65px;
