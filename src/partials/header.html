@@ -1,32 +1,42 @@
 <div class="header">
+  <img class="nav__background" src="images/header/nav-icecream.png" alt="icecream" />
+  <img class="nav__background--elipse" src="images/header/nav-elipse.png" alt="elipse" />
+  <img class="nav__background--tasty" src="images/header/tasty.png" alt="tasty" />
+  <img class="nav__background--bio-eco-milk" src="images/header/bio-eco-milk.png" alt="milk" />
   <div class="nav">
     <img class="nav__logo" src="images/header/icecream-logo.png" alt="logo" />
-    <button
-      class="menu-toggle open-button js-open-menu"
-      aria-expanded="false"
-      aria-controls="mobile-menu"
-    >
-      <svg
-        width="20"
-        height="20"
-        fill="currentColor"
-        viewBox="0 0 20 20"
-        xmlns="http://www.w3.org/2000/svg"
+    <div class="tablet__buttons">
+      <button
+        class="menu-toggle open-button js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
       >
-        <path
-          fill-rule="evenodd"
-          d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-          clip-rule="evenodd"
-        ></path>
-      </svg>
-    </button>
+        <svg
+          width="20"
+          height="20"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+            clip-rule="evenodd"
+          ></path>
+        </svg></button
+      ><a href="#">
+        <button class="tablet__menu-button">
+          Buy now<svg class="button__tick" width="8" height="10" viewbox="0 0 8 10">
+            <use xlink:href="images/header/button-tick.svg#tick"></use>
+          </svg>
+        </button>
+      </a>
+    </div>
   </div>
 
   <div class="nav__hero">
-    <img class="nav__background" src="images/header/nav-icecream.png" alt="icecream" />
-    <img class="nav__background--elipse" src="images/header/nav-elipse.png" alt="elipse" />
     <div class="nav__motto">
-      <p>Ice cream made with</p>
+      <p class="nav__motto--main">Ice cream made with</p>
       <p class="nav__motto--accent">passion</p>
 
       <div class="nav__buttons">
@@ -35,6 +45,25 @@
         ><button class="buttons__about">
           <a class="buttons__link--about" href="#about">How it's made?</a>
         </button>
+      </div>
+      <div class="nav__milk">
+        <p class="nav__milk-description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et
+        </p>
+        <img class="nav__arrow" src="images/header/arrow-right.png" alt="arrow" />
+      </div>
+    </div>
+    <div class="nav__numbers">
+      <div class="nav__cafes">
+        <img class="nav__number-ellipse" src="images/header/ellipse.png" alt="ellipse" />
+        <p class="nav__number">16</p>
+        <p class="nav__number-description">cafes</p>
+      </div>
+      <div class="nav__trucks">
+        <img class="nav__number-ellipse" src="images/header/ellipse.png" alt="ellipse" />
+        <p class="nav__number">23</p>
+        <p class="nav__number-description">food trucks</p>
       </div>
     </div>
   </div>
@@ -56,11 +85,13 @@
     </svg>
   </button>
   <div class="mobile-menu">
-    <button class="mobile-menu__button">
-      Buy now<svg class="button__tick" width="8" height="10" viewbox="0 0 8 10">
-        <use xlink:href="images/header/button-tick.svg#tick"></use>
-      </svg>
-    </button>
+    <a href="">
+      <button class="mobile-menu__button">
+        Buy now<svg class="button__tick" width="8" height="10" viewbox="0 0 8 10">
+          <use xlink:href="images/header/button-tick.svg#tick"></use>
+        </svg>
+      </button>
+    </a>
     <ul class="mobile-menu__list">
       <li><a href="" class="mobile-menu__link">Home</a></li>
       <li><a href="" class="mobile-menu__link">About us</a></li>
