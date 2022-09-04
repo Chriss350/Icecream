@@ -87,6 +87,9 @@ $maincolor: #ffffff;
   &__numbers {
     display: none;
   }
+  &__menu {
+    display: none;
+  }
 }
 //buttons
 .buttons {
@@ -362,6 +365,9 @@ $maincolor: #ffffff;
         z-index: -1;
       }
     }
+    &__menu {
+      display: none;
+    }
   }
   .mobile-menu__button {
     width: 186px;
@@ -394,6 +400,13 @@ $maincolor: #ffffff;
         font-size: 58px;
         line-height: 52.49px;
       }
+    }
+    &__menu {
+      display: flex;
+      align-items: center;
+      gap: 35px;
+      font-size: 16px;
+      line-height: 21px;
     }
     &__background {
       position: absolute;
@@ -536,5 +549,19 @@ $maincolor: #ffffff;
   }
   .menu-toggle {
     display: none;
+  }
+  .desktop-menu {
+    &__link {
+      color: $maincolor;
+      text-decoration: none;
+      font-family: 'DM Sans';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 15px;
+      line-height: 21px;
+    }
+  }
+  .desktop-menu__link:hover {
+    color: $mainBackgroundColor;
   }
 }
