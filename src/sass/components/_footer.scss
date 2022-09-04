@@ -8,29 +8,31 @@ $footerCopyright: #907e82;
 .footer {
   width: 100%;
   background-color: $footerBackground;
+  &__main {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+  }
   &__motto {
+    width: 232px;
     font-family: 'Titan One';
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
-    letter-spacing: 0.04em;
+
     text-transform: uppercase;
     color: $footerLogoMain;
-    margin-left: 20px;
-    margin-top: 113px;
-    p {
-      padding: 0;
-      margin: 0;
-    }
 
     &--accent {
+      margin-top: 17px;
       font-size: 34px;
       line-height: 39px;
       color: $footerLogoAccent;
+      letter-spacing: 0.04em;
     }
   }
   &__social-media {
-    margin-right: 21px;
+    padding-top: 43px;
   }
   &__list {
     margin: 0;
@@ -39,7 +41,6 @@ $footerCopyright: #907e82;
     display: inline-flex;
     justify-content: flex-end;
     align-items: center;
-    margin-top: 43px;
   }
   &__link {
     display: inline-flex;
@@ -69,7 +70,8 @@ $footerCopyright: #907e82;
       font-family: DM Sans;
       font-size: 13px;
       font-weight: 700;
-      line-height: 24px;
+      line-height: 22px;
+      padding-left: 3px;
       text-decoration: none;
       color: $footerLogoAccent;
     }
@@ -83,5 +85,81 @@ $footerCopyright: #907e82;
     border-top: 1px solid #e1e1e1;
     margin-top: 43px;
     color: $footerCopyright;
+    &-text {
+      width: 150px;
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    &__main {
+      width: 100%;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 0 36px;
+    }
+    &__motto {
+      font-size: 26px;
+      line-height: 30px;
+      letter-spacing: 0.04em;
+      width: 340px;
+      &--accent {
+        font-size: 48px;
+        line-height: 55px;
+        width: 340px;
+      }
+    }
+    &__social-media {
+      padding: 0;
+    }
+    &__copyright {
+      height: 73px;
+      &-text {
+        width: 276px;
+        font-size: 14px;
+        line-height: 1.86;
+      }
+    }
+  }
+}
+@media screen and (min-width: 1280px) {
+  .footer {
+    &__main {
+      width: 100%;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 0 121px;
+    }
+    &__motto {
+      font-size: 30px;
+      line-height: 34px;
+      letter-spacing: 0.04em;
+      width: 474px;
+      &--accent {
+        font-size: 58px;
+        line-height: 66px;
+        letter-spacing: 0.04em;
+        width: 474px;
+      }
+    }
+    &__social-media {
+      padding: 0;
+    }
+    &__copyright {
+      height: 45px;
+      &-text {
+        width: 276px;
+        font-size: 14px;
+        line-height: 1.86;
+      }
+    }
+    &__phone {
+      font-size: 16px;
+      line-height: 1.86;
+      &--accent {
+        font-size: 16px;
+        line-height: 1.86;
+      }
+    }
   }
 }
