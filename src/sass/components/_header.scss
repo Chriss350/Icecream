@@ -111,10 +111,11 @@ $maincolor: #ffffff;
     width: 61.2px;
     height: 24px;
     margin-right: 8px;
+    color: $maincolor;
+    text-decoration: none;
   }
   &__about {
     background: $maincolor;
-
     border-radius: 20px;
     border: none;
     font-family: 'DM Sans';
@@ -127,16 +128,9 @@ $maincolor: #ffffff;
     justify-content: center;
     width: 82.8px;
     height: 24px;
-  }
-  &__link {
-    &--products {
-      color: $maincolor;
-      text-decoration: none;
-    }
-    &--about {
-      text-decoration: none;
-      color: $mainBackgroundColor;
-    }
+    text-decoration: none;
+    color: $mainBackgroundColor;
+    
   }
 }
 //mobile-menu//
