@@ -74,6 +74,8 @@
     <!-- Gallery scripts -->
 
     <script>
+      document.addEventListener('touchstart', onTouchStart, { passive: true });
+
       lightGallery(document.getElementById('lightgallery'), {
         plugins: [lgThumbnail],
         licenseKey: 'your_license_key',
