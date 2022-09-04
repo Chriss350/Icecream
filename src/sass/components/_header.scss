@@ -413,7 +413,7 @@ $maincolor: #ffffff;
         position: absolute;
         width: 293px;
         height: 232px;
-        right: 34px;
+        right: 109px;
         bottom: 0;
       }
       &--bio-eco-milk {
@@ -427,8 +427,8 @@ $maincolor: #ffffff;
     }
     &__milk {
       display: block;
-      padding-top: 112px;
-      margin-left: 150px;
+      padding-top: 90px;
+      margin-left: 160px;
       width: 200px;
       &-description {
         font-style: normal;
@@ -438,10 +438,13 @@ $maincolor: #ffffff;
         width: 200px;
         height: 78px;
         text-transform: none;
+        letter-spacing: 0.04em;
       }
     }
     &__arrow {
-      margin-top: 7px;
+      width: 26px;
+      height: 26px;
+      margin-top: 20px;
     }
     &__numbers {
       display: flex;
