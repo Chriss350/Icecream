@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Icecream</title>
     <link
-      defer
+      async
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
       integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
@@ -14,10 +14,29 @@
     />
 
     <link
-      defer
+      async
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.8/dist/css/splide.min.css"
     />
+    <script async src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script
+      async
+      src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.8/dist/js/splide.min.js"
+    ></script>
+    <script
+      async
+      src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.6.0/lightgallery.min.js"
+      integrity="sha512-2Vd6dnkrqkfNnWC9qlNhcy3IaWYwggi4xW/98lt76TfBOvzhWLCCrxELko/qFiwgsZRn1jd5MbtcF8cgBmkuDg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      async
+      src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.6.0/plugins/thumbnail/lg-thumbnail.min.js"
+      integrity="sha512-OxvyFPsKvn4jSS6/JSGrSf88FFeT2LKQX2iUddcPXhvwbQMIzcI9JxiwZlZsmcISRjTIJ4LU3hT4deiLjs8CAw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <!-- image gallery -->
     <link type="text/css" rel="stylesheet" href="./scripts/lightgallery/css/lightgallery.css" />
     <!-- lightgallery plugins -->
@@ -39,10 +58,6 @@
     <script src="./index.js"></script>
     <script src="./scripts/mobile-menu.js"></script>
 
-    <script
-      defer
-      src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.8/dist/js/splide.min.js"
-    ></script>
     <script>
       new Splide('.splide', {
         classes: {
@@ -58,20 +73,7 @@
     </script>
 
     <!-- Gallery scripts -->
-    <script
-      defer
-      src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.6.0/lightgallery.min.js"
-      integrity="sha512-2Vd6dnkrqkfNnWC9qlNhcy3IaWYwggi4xW/98lt76TfBOvzhWLCCrxELko/qFiwgsZRn1jd5MbtcF8cgBmkuDg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script
-      defer
-      src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.6.0/plugins/thumbnail/lg-thumbnail.min.js"
-      integrity="sha512-OxvyFPsKvn4jSS6/JSGrSf88FFeT2LKQX2iUddcPXhvwbQMIzcI9JxiwZlZsmcISRjTIJ4LU3hT4deiLjs8CAw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
+
     <script>
       lightGallery(document.getElementById('lightgallery'), {
         plugins: [lgThumbnail],
@@ -80,7 +82,7 @@
       });
     </script>
     <!-- End Gallery scripts -->
-    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
     <script>
       $(document).ready(function () {
         // Add smooth scrolling to all links
