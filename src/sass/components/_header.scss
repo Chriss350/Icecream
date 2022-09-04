@@ -66,6 +66,8 @@ $maincolor: #ffffff;
     z-index: 1;
     margin-top: 92px;
     margin-left: 124px;
+    width: 171px;
+    height: 410px;
     &--elipse {
       position: absolute;
       width: 346px;
@@ -306,12 +308,16 @@ $maincolor: #ffffff;
       &--tasty {
         display: block;
         position: absolute;
+        width: 168px;
+        height: 133px;
         right: 34px;
         bottom: 0;
       }
       &--bio-eco-milk {
         display: block;
         position: absolute;
+        width: 124px;
+        height: 126px;
         left: 34px;
         bottom: 28px;
       }
@@ -406,7 +412,7 @@ $maincolor: #ffffff;
       align-items: center;
       gap: 35px;
       font-size: 16px;
-      line-height: 21px; 
+      line-height: 21px;
     }
     &__background {
       position: absolute;
