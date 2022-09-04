@@ -87,6 +87,9 @@ $maincolor: #ffffff;
   &__numbers {
     display: none;
   }
+  &__menu {
+    display: none;
+  }
 }
 //buttons
 .buttons {
@@ -362,6 +365,9 @@ $maincolor: #ffffff;
         z-index: -1;
       }
     }
+    &__menu {
+      display: none;
+    }
   }
   .mobile-menu__button {
     width: 186px;
@@ -395,6 +401,13 @@ $maincolor: #ffffff;
         line-height: 52.49px;
       }
     }
+    &__menu {
+      display: flex;
+      align-items: center;
+      gap: 35px;
+      font-size: 16px;
+      line-height: 21px; 
+    }
     &__background {
       position: absolute;
       width: 236px;
@@ -413,7 +426,7 @@ $maincolor: #ffffff;
         position: absolute;
         width: 293px;
         height: 232px;
-        right: 34px;
+        right: 109px;
         bottom: 0;
       }
       &--bio-eco-milk {
@@ -427,8 +440,8 @@ $maincolor: #ffffff;
     }
     &__milk {
       display: block;
-      padding-top: 112px;
-      margin-left: 150px;
+      padding-top: 90px;
+      margin-left: 160px;
       width: 200px;
       &-description {
         font-style: normal;
@@ -438,10 +451,13 @@ $maincolor: #ffffff;
         width: 200px;
         height: 78px;
         text-transform: none;
+        letter-spacing: 0.04em;
       }
     }
     &__arrow {
-      margin-top: 7px;
+      width: 26px;
+      height: 26px;
+      margin-top: 20px;
     }
     &__numbers {
       display: flex;
@@ -533,5 +549,19 @@ $maincolor: #ffffff;
   }
   .menu-toggle {
     display: none;
+  }
+  .desktop-menu {
+    &__link {
+      color: $maincolor;
+      text-decoration: none;
+      font-family: 'DM Sans';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 15px;
+      line-height: 21px;
+    }
+  }
+  .desktop-menu__link:hover {
+    color: $mainBackgroundColor;
   }
 }
