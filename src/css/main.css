@@ -505,7 +505,10 @@ p {
 }
 
 .about__logo-img {
+  min-width: 270px;
   width: 100%;
+  min-height: 269px;
+  height: 100%;
 }
 
 .about__subtitle {
@@ -632,6 +635,12 @@ p {
   .about__item {
     flex-basis: calc(50% - 17px);
   }
+  .about__logo-img {
+    min-width: 340px;
+    width: 100%;
+    min-height: 339px;
+    height: 100%;
+  }
   .about__div-items {
     display: flex;
     justify-content: center;
@@ -669,18 +678,20 @@ p {
   .about {
     background-image: url(../images/about/about-desctopsectionbg.png);
     background-repeat: no-repeat;
-    background-position: bottom 1% right 40%;
+    background-position: right 50% bottom 0%;
     background-size: 100%;
   }
 }
 @media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
   .about {
     background-image: url(../images/about/about-desctopsectionbgx2.png);
+    background-position: right 50% bottom 0%;
   }
 }
 @media screen and (min-width: 1280px) and (min-device-pixel-ratio: 3), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 3), screen and (min-width: 1280px) and (min-resolution: 288dpi), screen and (min-width: 1280px) and (min-resolution: 3dppx) {
   .about {
     background-image: url(../images/about/about-desctopsectionbgx3.png);
+    background-position: right 50% bottom 0%;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -708,12 +719,19 @@ p {
   }
 }
 @media screen and (min-width: 1280px) {
+  .about__logo-img {
+    min-width: 516px;
+    width: 100%;
+    min-height: 516px;
+    height: 100%;
+  }
+}
+@media screen and (min-width: 1280px) {
   .about__items {
     display: flex;
     align-items: flex-start;
     justify-content: center;
     padding-left: 50px;
-    padding-bottom: 65px;
     -moz-column-gap: 74px;
          column-gap: 74px;
   }
@@ -727,7 +745,7 @@ p {
   .about__div-items {
     display: flex;
     flex-direction: column;
-    margin-top: 55px;
+    margin-top: 50px;
     padding-right: 20px;
     -moz-column-gap: 35px;
          column-gap: 35px;
@@ -760,7 +778,7 @@ p {
     font-size: 14px;
     line-height: 1.94;
     letter-spacing: 0.04em;
-    padding-bottom: 40px;
+    padding-bottom: 35px;
     margin-left: 0px;
   }
 }
