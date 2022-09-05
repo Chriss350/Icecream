@@ -224,7 +224,8 @@ $readmore-hover: #ECEBEB;
     background-color: rgba(1,1,1,0);
     border-color: rgba(1,1,1,0);
     margin: 41px auto;
-    &:hover, &__arrow:hover {
+    z-index: 6;
+    &:hover {
         cursor: pointer;
     }
 }
