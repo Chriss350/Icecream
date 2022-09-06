@@ -315,6 +315,7 @@ $maincolor: #ffffff;
         width: 324px;
         height: 322px;
         margin-left: 88px;
+        margin-top: 0;
       }
       &--tasty {
         display: block;
@@ -446,7 +447,8 @@ $maincolor: #ffffff;
         position: absolute;
         width: 538px;
         height: 538px;
-        margin-left: 0px;
+        margin-left: 0;
+        margin-top: 0;
       }
       &--tasty {
         display: block;
