@@ -10,6 +10,11 @@ $maincolor: #ffffff;
   position: relative;
   overflow: hidden;
 }
+.logo-icecream {
+  position: absolute;
+  left: 20%;
+}
+
 .nav {
   display: flex;
   flex-direction: row;
@@ -27,6 +32,11 @@ $maincolor: #ffffff;
     overflow: hidden;
     padding: 0 20px;
   }
+  &__hero-down {
+    position: relative;
+    display: flex;
+  }
+
   &__buttons {
     display: flex;
     z-index: 3;
@@ -37,7 +47,6 @@ $maincolor: #ffffff;
     top: 0;
     width: 218px;
     font-family: 'Titan One';
-
     font-weight: 400;
     font-size: 26px;
     line-height: 30px;
@@ -65,7 +74,7 @@ $maincolor: #ffffff;
     position: absolute;
     z-index: 1;
     margin-top: 92px;
-    margin-left: 124px;
+    margin-left: 83px;
     width: 171px;
     height: 410px;
     &--elipse {
@@ -73,8 +82,7 @@ $maincolor: #ffffff;
       width: 346px;
       height: 344px;
       z-index: 0;
-      margin-top: 83px;
-      margin-left: 36px;
+      margin-top: 72px;
     }
     &--tasty {
       display: none;
@@ -95,7 +103,7 @@ $maincolor: #ffffff;
 }
 //buttons
 .buttons {
-  z-index: 3;
+  z-index: 50;
   &__products {
     background: $mainBackgroundColor;
     border-radius: 20px;
@@ -130,7 +138,6 @@ $maincolor: #ffffff;
     height: 24px;
     text-decoration: none;
     color: $mainBackgroundColor;
-    
   }
 }
 //mobile-menu//
@@ -220,9 +227,11 @@ $maincolor: #ffffff;
   color: $mainBackgroundColor;
 }
 .open-button {
+  position: relative;
   color: $mainBackgroundColor;
   stroke: 1px;
   margin-top: 18px;
+  z-index: 50;
 }
 .close-button {
   color: $maincolor;
@@ -236,6 +245,12 @@ $maincolor: #ffffff;
   .header {
     height: 399px;
   }
+  .logo-icecream {
+    position: absolute;
+    left: 32%;
+    top: 38px;
+  }
+
   .tablet {
     &__menu-button {
       width: 160px;
@@ -281,6 +296,9 @@ $maincolor: #ffffff;
       height: 100%;
       display: flex;
       justify-content: space-between;
+      padding: 0px 34px;
+    }
+    &__hero-down {
       padding: 0 34px;
     }
     &__motto {
@@ -290,14 +308,13 @@ $maincolor: #ffffff;
       position: absolute;
       width: 143px;
       height: 336px;
-      margin-top: 63px;
-      margin-left: 378px;
+      margin-top: 25px;
+      margin-left: 166px;
       &--elipse {
         position: absolute;
         width: 324px;
         height: 322px;
-        margin-top: 31px;
-        margin-left: 307px;
+        margin-left: 88px;
       }
       &--tasty {
         display: block;
@@ -306,21 +323,21 @@ $maincolor: #ffffff;
         height: 133px;
         right: 34px;
         bottom: 0;
+        transform: translateY(21px);
+        z-index: 20;
       }
       &--bio-eco-milk {
         display: block;
-        position: absolute;
         width: 124px;
         height: 126px;
-        left: 34px;
-        bottom: 28px;
       }
     }
     &__milk {
-      display: block;
-      padding-top: 28px;
-      margin-left: 120px;
+      display: flex;
+
       &-description {
+        display: flex;
+        flex-direction: column;
         font-family: 'DM Sans';
         font-style: normal;
         font-size: 8px;
@@ -328,17 +345,20 @@ $maincolor: #ffffff;
         color: $maincolor;
         width: 114px;
         text-transform: none;
+        padding-top: 44px;
       }
     }
     &__arrow {
       margin-top: 7px;
+      width: 18px;
+      height: 18px;
     }
     &__numbers {
       display: flex;
       flex-direction: column;
-      padding-top: 94px;
       position: relative;
       gap: 13px;
+      padding-top: 102px;
     }
     &__number {
       font-family: 'Titan One';
@@ -377,21 +397,30 @@ $maincolor: #ffffff;
   .header {
     height: 665px;
   }
+  .logo-icecream {
+    left: 41%;
+    top: 84px;
+  }
   .nav {
-    position: absolute;
+    position: relative;
     width: 100%;
     padding: 37px 115px 0 46px;
     z-index: 100;
-
     &__hero {
       height: 100%;
       display: flex;
       justify-content: space-between;
       padding: 0 115px 0 115px;
     }
+    &__hero-down {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      height: 274px;
+    }
     &__motto {
       width: 277px;
-      padding-top: 84px;
       &--main {
         font-size: 38px;
         line-height: 44px;
@@ -412,14 +441,12 @@ $maincolor: #ffffff;
       position: absolute;
       width: 236px;
       height: 557px;
-      margin-top: 108px;
-      margin-left: 594px;
+      margin-left: 110px;
       &--elipse {
         position: absolute;
         width: 538px;
         height: 538px;
-        margin-top: 52px;
-        margin-left: 475px;
+        margin-left: 0px;
       }
       &--tasty {
         display: block;
@@ -428,22 +455,21 @@ $maincolor: #ffffff;
         height: 232px;
         right: 109px;
         bottom: 0;
+        z-index: 20;
       }
       &--bio-eco-milk {
         display: block;
-        position: absolute;
         width: 188px;
         height: 191px;
-        left: 77px;
-        bottom: 45px;
       }
     }
     &__milk {
-      display: block;
-      padding-top: 90px;
-      margin-left: 160px;
-      width: 200px;
+      display: flex;
+      flex-direction: row;
+
       &-description {
+        display: flex;
+        flex-direction: column;
         font-style: normal;
         font-size: 14px;
         line-height: 20px;
@@ -452,6 +478,7 @@ $maincolor: #ffffff;
         height: 78px;
         text-transform: none;
         letter-spacing: 0.04em;
+        padding-top: 52px;
       }
     }
     &__arrow {
@@ -462,7 +489,7 @@ $maincolor: #ffffff;
     &__numbers {
       display: flex;
       flex-direction: column;
-      padding-top: 156px;
+      padding-top: 74px;
       position: relative;
       gap: 13px;
     }
