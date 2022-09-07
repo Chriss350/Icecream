@@ -96,14 +96,14 @@ $readmore-hover: #ECEBEB;
                 @media (min-width: 768px) {
                     background-image: url(../images/products/icecream-220.webp);
                 }
-                @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) and (min-width: 768px) {
+                @media (min-device-pixel-ratio: 2) and (min-width: 768px), (min-resolution: 192dpi) and (min-width: 768px), (min-resolution: 2dppx) and (min-width: 768px) {
                     background-image: url(../images/products/icecream-440.webp);
                 }
                 @media (min-width: 1200px) {
                     background-image: url(../images/products/icecream-335.webp);
                     top: -59%;
                 }
-                @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) and (min-width: 1200px) {
+                @media (min-device-pixel-ratio: 2) and (min-width: 1200px), (min-resolution: 192dpi) and (min-width: 1200px), (min-resolution: 2dppx) and (min-width: 1200px) {
                     background-image: url(../images/products/icecream-670.webp);
                     top: -59%;
                 }
@@ -128,14 +128,14 @@ $readmore-hover: #ECEBEB;
                 @media (min-width: 768px) {
                     background-image: url(../images/products/icecoffee-220.webp);
                 }
-                @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) and (min-width: 768px) {
+                @media (min-device-pixel-ratio: 2) and (min-width: 768px), (min-resolution: 192dpi) and (min-width: 768px), (min-resolution: 2dppx) and (min-width: 768px) {
                     background-image: url(../images/products/icecoffee-440.webp);
                 }
                 @media (min-width: 1200px) {
                     background-image: url(../images/products/icecoffee-335.webp);
                     top: -59%;
                 }
-                @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) and (min-width: 1200px) {
+                @media (min-device-pixel-ratio: 2) and (min-width: 1200px), (min-resolution: 192dpi) and (min-width: 1200px), (min-resolution: 2dppx) and (min-width: 1200px) {
                     background-image: url(../images/products/icecoffee-670.webp);
                     top: -59%;
                 }
@@ -160,14 +160,14 @@ $readmore-hover: #ECEBEB;
                 @media (min-width: 768px) {
                     background-image: url(../images/products/milkshake-220.webp);
                 }
-                @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) and (min-width: 768px) {
+                @media (min-device-pixel-ratio: 2) and (min-width: 768px), (min-resolution: 192dpi) and (min-width: 768px), (min-resolution: 2dppx) and (min-width: 768px) {
                     background-image: url(../images/products/milkshake-440.webp);
                 }
                 @media (min-width: 1200px) {
                     background-image: url(../images/products/milkshake-335.webp);
                     top: -59%;
                 }
-                @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) and (min-width: 1200px) {
+                @media (min-device-pixel-ratio: 2) and (min-width: 1200px), (min-resolution: 192dpi) and (min-width: 1200px), (min-resolution: 2dppx) and (min-width: 1200px) {
                     background-image: url(../images/products/milkshake-670.webp);
                     top: -59%;
                 }

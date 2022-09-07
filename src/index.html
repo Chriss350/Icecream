@@ -4,7 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="favicon.ico" />
-    <title>Icecream</title>
+    <title>Icecream made with passion</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
@@ -32,6 +39,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+
     <!-- image gallery -->
     <link type="text/css" rel="stylesheet" href="./scripts/lightgallery/css/lightgallery.css" />
     <!-- lightgallery plugins -->
@@ -50,7 +58,7 @@
     <include src="./partials/footer.html"></include>
 
     <!-- Skrypt jest na samym dole kodu. On juz ma w sobie podłączony SAAS plik. -->
-    <script src="./index.js"></script>
+
     <script src="./scripts/mobile-menu.js"></script>
     <script src="./scripts/order-form-modal/order-modal.js"></script>
 
@@ -107,6 +115,37 @@
         });
       });
     </script>
+    <script type="text/javascript">
+      // Get the button
+      let mybutton = document.getElementById('myBtn');
+
+      mybutton.addEventListener('click', ToTheTop);
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = 'block';
+        } else {
+          mybutton.style.display = 'none';
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function ToTheTop() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
     <!-- Skrypt jest na samym dole kodu. On juz ma w sobie podłączony SAAS plik. -->
     <script src="./index.js"></script>
   </body>

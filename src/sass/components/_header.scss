@@ -1,7 +1,3 @@
-$mainBackgroundColor: #d41443;
-$mainBackgroundColorMiddle: #e17992;
-$mainBackgroundColorLight: #ffb8ca;
-$maincolor: #ffffff;
 //main styling
 .header {
   background-color: $mainBackgroundColorLight;
@@ -45,7 +41,7 @@ $maincolor: #ffffff;
   }
   &__motto {
     top: 0;
-    width: 218px;
+    width: 168px;
     font-family: 'Titan One';
     font-weight: 400;
     font-size: 26px;
@@ -62,6 +58,9 @@ $maincolor: #ffffff;
     }
     &--main {
       text-transform: uppercase;
+      font-weight: 400;
+      font-size: 26px;
+      line-height: 30px;
     }
     &--accent {
       font-size: 48px;
@@ -243,8 +242,7 @@ $maincolor: #ffffff;
 //order form modal
 .modal__container {
   position: fixed;
-  height: 100%;
-  width: 100%;
+
   top: 0;
   left: 0;
 
@@ -289,7 +287,7 @@ $maincolor: #ffffff;
 .modal {
   position: absolute;
   top: 10%;
-
+  overflow: auto;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   background-color: $maincolor;
@@ -380,17 +378,18 @@ $maincolor: #ffffff;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: bottom;
+
   &__logo {
     width: 200px;
     padding: 20px 0 20px 0;
   }
 
   &__label > .label__title {
-    font-family: "Titan One";
+    font-family: 'Titan One';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 18px;
+    line-height: 1.28;
     letter-spacing: 0.04em;
     color: $mainBackgroundColor;
   }
@@ -398,7 +397,6 @@ $maincolor: #ffffff;
   &__container {
     display: flex;
     flex-direction: column;
-    
   }
 
   &__input {
@@ -431,9 +429,8 @@ $maincolor: #ffffff;
 #order__comment {
   width: 100%;
   height: 120px;
-  
-  resize: none;
 
+  resize: none;
 }
 //media
 @media screen and (min-width: 768px) {
@@ -498,6 +495,16 @@ $maincolor: #ffffff;
     }
     &__motto {
       margin-top: 102px;
+
+      &--main {
+        font-size: 22px;
+        line-height: 25px;
+        padding-top: 15px;
+      }
+      &--accent {
+        font-size: 37px;
+        line-height: 42px;
+      }
     }
     &__background {
       position: absolute;
@@ -796,17 +803,40 @@ $maincolor: #ffffff;
     min-width: calc(320px - 60px);
     max-width: 450px;
     max-height: 80%;
-    
   }
 }
 @media screen and (min-width: 480px) and (max-width: 1199px) {
   .modal {
     width: 450px;
-    
   }
 }
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
   }
+}
+
+//back to the top button
+.arrow-back-to-top {
+  color: $mainBackgroundColor;
+}
+#myBtn {
+  width: 50px;
+  height: 50px;
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: $maincolor;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 50%;
+}
+
+#myBtn:hover {
+  background-color: $mainBackgroundColorLight;
 }
