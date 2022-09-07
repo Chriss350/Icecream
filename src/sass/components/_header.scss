@@ -41,7 +41,7 @@
   }
   &__motto {
     top: 0;
-    width: 218px;
+    width: 168px;
     font-family: 'Titan One';
     font-weight: 400;
     font-size: 26px;
@@ -59,6 +59,8 @@
     &--main {
       text-transform: uppercase;
       font-weight: 400;
+      font-size: 26px;
+      line-height: 30px;
     }
     &--accent {
       font-size: 48px;
@@ -493,6 +495,16 @@
     }
     &__motto {
       margin-top: 102px;
+
+      &--main {
+        font-size: 22px;
+        line-height: 25px;
+        padding-top: 15px;
+      }
+      &--accent {
+        font-size: 37px;
+        line-height: 42px;
+      }
     }
     &__background {
       position: absolute;
