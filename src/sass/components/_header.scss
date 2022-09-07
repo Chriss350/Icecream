@@ -809,6 +809,8 @@
   color: $mainBackgroundColor;
 }
 #myBtn {
+  width: 50px;
+  height: 50px;
   display: none;
   position: fixed;
   bottom: 20px;
@@ -818,11 +820,11 @@
   border: none;
   outline: none;
   background-color: $maincolor;
-cursor: pointer;
+  cursor: pointer;
   padding: 15px;
   border-radius: 50%;
 }
 
 #myBtn:hover {
-  background-color: #555;
+  background-color: $mainBackgroundColorLight;
 }
