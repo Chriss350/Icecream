@@ -243,8 +243,7 @@ $maincolor: #ffffff;
 //order form modal
 .modal__container {
   position: fixed;
-  height: 100%;
-  width: 100%;
+
   top: 0;
   left: 0;
 
@@ -386,11 +385,11 @@ $maincolor: #ffffff;
   }
 
   &__label > .label__title {
-    font-family: "Titan One";
+    font-family: 'Titan One';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 18px;
+    line-height: 1.28;
     letter-spacing: 0.04em;
     color: $mainBackgroundColor;
   }
@@ -398,7 +397,6 @@ $maincolor: #ffffff;
   &__container {
     display: flex;
     flex-direction: column;
-    
   }
 
   &__input {
@@ -431,9 +429,8 @@ $maincolor: #ffffff;
 #order__comment {
   width: 100%;
   height: 120px;
-  
-  resize: none;
 
+  resize: none;
 }
 //media
 @media screen and (min-width: 768px) {
@@ -796,13 +793,11 @@ $maincolor: #ffffff;
     min-width: calc(320px - 60px);
     max-width: 450px;
     max-height: 80%;
-    
   }
 }
 @media screen and (min-width: 480px) and (max-width: 1199px) {
   .modal {
     width: 450px;
-    
   }
 }
 @media screen and (min-width: 1200px) {
