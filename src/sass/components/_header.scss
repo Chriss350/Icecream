@@ -240,6 +240,201 @@ $maincolor: #ffffff;
 .tablet__menu-button {
   display: none;
 }
+//order form modal
+.modal__container {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+
+  z-index: 999;
+
+  &.in {
+    .modal__background {
+      background: rgba(0, 0, 0, 0);
+      animation: fadeIn 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+
+      .modal {
+        animation: slideIn 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+      }
+    }
+  }
+
+  &.out {
+    animation: quickScaleDown 0s 0.5s linear forwards;
+
+    .modal__background {
+      animation: fadeOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+
+      .modal {
+        animation: slideOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+      }
+    }
+  }
+}
+.modal__background {
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  z-index: 47;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.modal {
+  position: absolute;
+  top: 10%;
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  background-color: $maincolor;
+  border-radius: 4px;
+
+  button[type='button'] {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    background-color: $maincolor;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
+    cursor: pointer;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    background: rgba(0, 0, 0, 0);
+  }
+
+  100% {
+    background: rgba(0, 0, 0, 0.7);
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    background: rgba(0, 0, 0, 0.7);
+  }
+
+  100% {
+    background: rgba(0, 0, 0, 0);
+  }
+}
+
+@keyframes quickScaleDown {
+  0% {
+    transform: scale(0);
+  }
+
+  99.9% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(0);
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-1500px) scaleX(1) rotate(360deg);
+  }
+
+  70% {
+    transform: translateX(30px) scaleX(0.9);
+  }
+
+  100% {
+    transform: translateX(0px) scaleX(1) rotate(0deg);
+  }
+}
+
+@keyframes slideOut {
+  0% {
+    transform: translateX(0px) scaleX(1) rotate(0deg);
+  }
+
+  30% {
+    transform: translateX(-30px) scaleX(1.1);
+  }
+
+  100% {
+    transform: translateX(1500px) scaleX(1) rotate(360deg);
+  }
+}
+
+.is-hidder-order {
+  display: none;
+}
+.order {
+  padding-left: 30px;
+  padding-right: 30px;
+  background-image: url(/images/about/about-desctopsectionbg.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  &__logo {
+    width: 200px;
+    padding: 20px 0 20px 0;
+  }
+
+  &__label > .label__title {
+    font-family: "Titan One";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.04em;
+    color: $mainBackgroundColor;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  &__input {
+    width: 100%;
+    height: 40px;
+    text-indent: 10px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 5px;
+    margin-top: 4px;
+    margin-bottom: 15px;
+    outline: none;
+  }
+
+  &__button {
+    width: 200px;
+    height: 50px;
+    background-color: $mainBackgroundColor;
+    font-family: 'DM Sans';
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+    color: $maincolor;
+    text-align: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    border: none;
+    margin: 15px auto 40px auto;
+  }
+}
+#order__comment {
+  width: 100%;
+  height: 120px;
+  
+  resize: none;
+
+}
 //media
 @media screen and (min-width: 768px) {
   .header {
@@ -592,5 +787,26 @@ $maincolor: #ffffff;
   }
   .desktop-menu__link:hover {
     color: $mainBackgroundColor;
+  }
+}
+//media order modal
+@media screen and (min-width: 479px) {
+  .modal {
+    width: 80%;
+    min-width: calc(320px - 60px);
+    max-width: 450px;
+    max-height: 80%;
+    
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .modal {
+    width: 450px;
+    
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
   }
 }
