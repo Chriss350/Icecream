@@ -149,10 +149,10 @@
     </div>
   </div>
   <!-- order form modal -->
-  <div class="modal__container is-hidden-order"  data-order-modal>
+  <div class="modal__container is-hidden-order" data-order-modal>
     <div class="modal__background">
       <div class="modal">
-        <form name="order" autocomplete="off" class="order" validate>
+        <form name="order" autocomplete="off" class="order">
           <div class="order__container">
             <img
               class="order__logo"
@@ -168,12 +168,25 @@
             <label for="order__input" class="order__label">
               <span class="label__title">Imię</span>
 
-              <input class="order__input" id="order__name" type="text" name="name" required />
+              <input
+                class="order__input"
+                id="order__name"
+                type="text"
+                name="name"
+                id="order__input"
+                required
+              />
             </label>
             <label for="order__input" class="order__label">
               <span class="label__title">Telefon</span>
 
-              <input class="order__input" id="order__phone" type="tel" name="phone-number" />
+              <input
+                class="order__input"
+                id="order__phone"
+                type="tel"
+                name="phone-number"
+                id="order__input"
+              />
             </label>
             <label for="order__input" class="order__label">
               <span class="label__title">Email</span>
@@ -183,16 +196,16 @@
                 id="order__email"
                 type="email"
                 name="email"
+                id="order__input"
                 required
               /> </label
-            ><label for="order__input" class="order__label">
+            ><label for="order__comment" class="order__label">
               <span class="label__title">Komentarz</span>
               <textarea
                 class="order__input"
                 id="order__comment"
-                type="textarea"
                 name="comment"
-                placeholder="Szczególne życzenia"
+                placeholder="Szczególne życzenia" 
               >
               </textarea>
             </label>
