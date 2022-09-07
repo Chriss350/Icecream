@@ -1,0 +1,32 @@
+.scrollbar {
+  background-color: #f5f5f5;
+  float: left;
+  height: 300px;
+  margin-bottom: 25px;
+  margin-left: 22px;
+  margin-top: 40px;
+  width: 65px;
+  overflow-y: scroll;
+}
+
+.force-overflow {
+  min-height: 450px;
+}
+::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 10px;
+  background-color: #e40f0f;
+}
+::-webkit-scrollbar-thumb {
+  background-color:$mainBackgroundColor;
+  width: 35px;
+  border-radius: 15px;
+}
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: $maincolor;
+  width: 45px;
+  border-radius: 10px;
+  
+}
