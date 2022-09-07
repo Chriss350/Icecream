@@ -24,12 +24,31 @@ $franchise-hover: #ecebeb;
   opacity: 0;
 }
 
-.products-section {
+.contacts-section {
+  position: relative;
   background-image: linear-gradient(to bottom, #ffffff 5.29%, #fff5f6 5.29%, #fff5f6);
   @media (min-width: 768px) {
     background-image: linear-gradient(to bottom, #ffffff 22.5%, #fff5f6 22.5%, #fff5f6);
   }
-}
+  &__splashes-left {
+    display: none;
+    @media (min-width: 1200px) {
+      display: block;
+      position: absolute;
+      top: 306px;
+      left: 0;
+    }
+  }
+  &__splashes-right {
+    display: none;
+    @media (min-width: 1200px) {
+      display: block;
+      position: absolute;
+      top: 431px;
+      right: 0;
+    }
+  }
+  }
 
 .container {
   min-width: 320px;
