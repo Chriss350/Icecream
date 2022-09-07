@@ -54,7 +54,7 @@
               clip-rule="evenodd"
             ></path>
           </svg></button
-        ><a class="tablet__menu-button" href="#">
+        ><a class="tablet__menu-button" data-order-modal-open>
           Buy now<svg class="button__tick" width="8" height="10" viewbox="0 0 8 10">
             <use xlink:href="images/header/button-tick.svg#tick"></use>
           </svg>
@@ -133,11 +133,12 @@
       </svg>
     </button>
     <div class="mobile-menu">
-      <a href="" class="mobile-menu__button">
+      <a href="" class="mobile-menu__button" data-order-modal-open>
         Buy now<svg class="button__tick" width="8" height="10" viewbox="0 0 8 10">
           <use xlink:href="images/header/button-tick.svg#tick"></use>
         </svg>
       </a>
+      <!-- mobile menu nav list  -->
       <ul class="mobile-menu__list">
         <li><a href="#header" class="mobile-menu__link">Home</a></li>
         <li><a href="#products" class="mobile-menu__link">Our products</a></li>
@@ -145,6 +146,62 @@
         <li><a href="#gallery" class="mobile-menu__link">Gallery</a></li>
         <li><a href="#contacts" class="mobile-menu__link">Contact</a></li>
       </ul>
+    </div>
+  </div>
+  <!-- order form modal -->
+  <div class="modal__container is-hidden-order"  data-modal>
+    <div class="modal__background">
+      <div class="modal">
+        <form name="order" autocomplete="off" class="order" validate>
+          <div class="order__container">
+            <img
+              class="order__logo"
+              src="images/header/icecream-logo.webp"
+              alt="logo"
+              srcset="
+                images/header/icecream-logo.webp     320w,
+                images/header/icecream-logo@2x.webp  480w,
+                images/header/icecream-logo@3x.webp 1280w
+              "
+              sizes="(min-width: 1280px) 1280px, (min-width: 480px) 480px, (min-width: 320px) 320px, 100vw"
+            />
+            <label for="order__input" class="order__label">
+              <span class="label__title">Imię</span>
+
+              <input class="order__input" id="order__name" type="text" name="name" required />
+            </label>
+            <label for="order__input" class="order__label">
+              <span class="label__title">Telefon</span>
+
+              <input class="order__input" id="order__phone" type="tel" name="phone-number" />
+            </label>
+            <label for="order__input" class="order__label">
+              <span class="label__title">Email</span>
+
+              <input
+                class="order__input"
+                id="order__email"
+                type="email"
+                name="email"
+                required
+              /> </label
+            ><label for="order__input" class="order__label">
+              <span class="label__title">Komentarz</span>
+              <textarea
+                class="order__input"
+                id="order__comment"
+                type="textarea"
+                name="comment"
+                placeholder="Szczególne życzenia"
+              >
+              </textarea>
+            </label>
+
+            <button type="submit" class="order__button">Zamów</button>
+          </div>
+        </form>
+        <button type="button" id="cBtn" data-order-modal-close>X</button>
+      </div>
     </div>
   </div>
 </header>
