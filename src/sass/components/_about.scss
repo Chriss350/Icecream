@@ -441,7 +441,7 @@ screen and (min-resolution: 3dppx) {
 .read-more__title {
   text-align: center;
   margin-top: 2vh;
-  margin-left: auto;
+  margin-right: auto;
   margin-left: auto;
   width: 95%;
   height: 76px;
@@ -457,7 +457,6 @@ screen and (min-resolution: 3dppx) {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  // padding-top: 30px;
   max-width: calc(100% - 50px);
   overflow: auto;
   height: 50%;
@@ -505,11 +504,11 @@ screen and (min-resolution: 3dppx) {
   }
 }
 
-@media screen and (min-width:480px) and (max-width:1199px) {
+@media screen and (min-width:480px) and (max-width:1279px) {
   .about-read-more__modal {
     width: 450px;
     height: 85%;
-    max-height: 480px;
+    max-height: 500px;
   }
 
   .read-more__subtitle {
@@ -518,12 +517,12 @@ screen and (min-resolution: 3dppx) {
 
   .read-more__title {
     height: auto;
-    margin-bottom: 4vh;
+    margin-bottom: 1vh;
   }
 
   .read-more__text-box {
     overflow: auto;
-    max-height: 30vh;
+    max-height: 25vh;
   }
 
   .read-more__text {
@@ -535,7 +534,7 @@ screen and (min-resolution: 3dppx) {
   }
 }
 
-@media screen and (min-width:1200px) {
+@media screen and (min-width:1280px) {
   .about-read-more__modal {
     width: 528px;
     height: 500px;
@@ -544,7 +543,7 @@ screen and (min-resolution: 3dppx) {
 
   .read-more__text-box {
     overflow: auto;
-    max-height: 30vh;
+    max-height: 36vh;
   }
 
   .read-more__text {
@@ -555,8 +554,8 @@ screen and (min-resolution: 3dppx) {
     letter-spacing: 0.03em;
   }
 
-  .about__title {
-    margin-bottom: 4vh;
+  .read-more__title {
+    height: 7vh;
   }
 
   .is-hidden {
