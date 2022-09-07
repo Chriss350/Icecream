@@ -1246,14 +1246,16 @@ p {
   font-size: 18px;
   line-height: 1.145;
   color: #FFA5BA;
-  padding-top: 20px;
+  padding-top: 2vh;
   font-family: "Titan One";
   text-transform: uppercase;
 }
 
 .read-more__title {
   text-align: center;
-  margin-top: 15px;
+  margin-top: 2vh;
+  margin-left: auto;
+  margin-left: auto;
   width: 95%;
   height: 76px;
   font-weight: 400;
@@ -1269,12 +1271,21 @@ p {
   margin-left: auto;
   margin-right: auto;
   max-width: calc(100% - 50px);
+  overflow: auto;
+  height: 50%;
+  max-height: 25vh;
 }
 
 .read-more__text {
-  font-size: 0.7em;
-  line-height: 1.76;
+  padding-bottom: 5px;
+  text-indent: 20px;
+  text-align: justify;
+  font-size: 0.8em;
+  line-height: 1.96;
   letter-spacing: 0.03em;
+}
+.read-more__text::first-letter {
+  font-size: 2em;
 }
 
 @media screen and (max-width: 479px) {
@@ -1282,32 +1293,69 @@ p {
     width: 80%;
     min-width: 260px;
     max-width: 450px;
-    height: 80%;
+    height: 70%;
+    max-height: 460px;
+  }
+  .read-more__title {
+    height: auto;
+    margin-bottom: 4vh;
+  }
+  .read-more__text-box {
+    overflow: auto;
+    max-height: 26vh;
   }
   .read-more__text {
-    font-size: 0.7em;
-    line-height: 1.17;
+    text-align: justify;
+    font-size: 0.8em;
+    line-height: 1.5;
     letter-spacing: 0.03em;
   }
 }
 @media screen and (min-width: 480px) and (max-width: 1199px) {
   .about-read-more__modal {
     width: 450px;
-    height: 80%;
-    max-height: 609px;
+    height: 85%;
+    max-height: 480px;
+  }
+  .read-more__subtitle {
+    padding-top: 2vh;
+  }
+  .read-more__title {
+    height: auto;
+    margin-bottom: 4vh;
+  }
+  .read-more__text-box {
+    overflow: auto;
+    max-height: 30vh;
   }
   .read-more__text {
-    font-size: 0.7em;
-    line-height: 1.17;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 0.8em;
+    line-height: 1.5;
     letter-spacing: 0.03em;
   }
 }
 @media screen and (min-width: 1200px) {
   .about-read-more__modal {
     width: 528px;
-    height: 581px;
+    height: 500px;
     -webkit-animation: slideIn 750ms cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
             animation: slideIn 750ms cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+  }
+  .read-more__text-box {
+    overflow: auto;
+    max-height: 30vh;
+  }
+  .read-more__text {
+    padding-left: 2vw;
+    padding-right: 2vw;
+    font-size: 0.8em;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+  }
+  .about__title {
+    margin-bottom: 4vh;
   }
   .is-hidden .about-read-more__modal {
     -webkit-animation: slideOut 5s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
