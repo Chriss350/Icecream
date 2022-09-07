@@ -1,229 +1,233 @@
-$text-contacts-main: #907E82;
-$text-contacts-place-type: #FFFFFF;
+$text-contacts-main: #907e82;
+$text-contacts-place-type: #ffffff;
 $text-contacts-headers: #000000;
-$text-contacts-open-hours: #FFA5BA;
-$text-our-locations: #FFFFFF;
-$text-franchise: #D41443;
-$contacts-background: #FFF5F6;
-$contact-box-background: #FFFFFF;
-$cafe-background: #F0D1A5;
-$foodtruck-background: #C2E297;
-$our-locations-background: #D41342;
-$franchise-background: #FFFFFF;
-$franchise-hover: #ECEBEB;
+$text-contacts-open-hours: #ffa5ba;
+$text-our-locations: #ffffff;
+$text-franchise: #d41443;
+$contacts-background: #fff5f6;
+$contact-box-background: #ffffff;
+$cafe-background: #f0d1a5;
+$foodtruck-background: #c2e297;
+$our-locations-background: #d41342;
+$franchise-background: #ffffff;
+$franchise-hover: #ecebeb;
 
 .hidden {
-    display: none;
+  display: none;
 }
 
 .filler {
-    padding-top: 14.78px;
-    padding-bottom: 14.78px;
-    margin-block-start: 0px; 
-    margin-block-end: 0px;
-    opacity: 0;
+  padding-top: 14.78px;
+  padding-bottom: 14.78px;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  opacity: 0;
 }
 
 .products-section {
-    background-image: linear-gradient(
-        to bottom,
-        #FFFFFF 5.29%,
-        #FFF5F6 5.29%,
-        #FFF5F6
-      );
-      @media (min-width: 768px) {
-        background-image: linear-gradient(
-            to bottom,
-            #FFFFFF 22.5%,
-            #FFF5F6 22.5%,
-            #FFF5F6
-            );
-    }
+  background-image: linear-gradient(to bottom, #ffffff 5.29%, #fff5f6 5.29%, #fff5f6);
+  @media (min-width: 768px) {
+    background-image: linear-gradient(to bottom, #ffffff 22.5%, #fff5f6 22.5%, #fff5f6);
+  }
 }
 
 .container {
-    min-width: 320px;
-    max-width: 1280px;
-    margin: auto;
-    &--contacts {
-        font-family: DM Sans;
-        font-size: 12px;
-        font-weight: 500;
-        text-align: center;
-        color: $text-contacts-main;
-        padding: 0px 15.625% 98px 15.625%;
-        @media (min-width: 768px) {
-            padding: 119px 4.6875% 165px 4.6875%;
-        }
-        @media (min-width: 1200px) {
-            padding: 132px 9.58% 165px 9.58%;
-        }
+  min-width: 320px;
+  max-width: 1280px;
+  margin: auto;
+  &--contacts {
+    font-family: DM Sans;
+    font-size: 12px;
+    font-weight: 500;
+    text-align: center;
+    color: $text-contacts-main;
+    padding: 0px 15.625% 98px 15.625%;
+    @media (min-width: 768px) {
+      padding: 119px 4.6875% 165px 4.6875%;
     }
+    @media (min-width: 1200px) {
+      padding: 132px 9.58% 165px 9.58%;
+    }
+  }
 }
 
 .contacts {
+  @media (min-width: 768px) {
+    display: flex;
+  }
+  &__contact {
+    margin-top: 20px;
+    text-align: left;
+  }
+  &__contact:nth-child(2n) {
     @media (min-width: 768px) {
-        display: flex;
+      margin-left: 2.604%;
+      margin-right: 2.604%;
     }
-    &__contact {
-        margin-top: 20px;
-        text-align: left;
+    @media (min-width: 1200px) {
+      margin-left: 2.41%;
+      margin-right: 2.41%;
     }
-    &__contact:nth-child(2n) {
-        @media (min-width: 768px) {
-            margin-left: 2.604%;
-            margin-right: 2.604%;
-        }
-        @media (min-width: 1200px) {
-            margin-left: 2.41%;
-            margin-right: 2.41%;
-        }
+  }
+  &__box {
+    box-shadow: 0px 8px 30px 0px #d414431a;
+    border-radius: 24px;
+    background-color: $contact-box-background;
+  }
+  &__textbox {
+    margin: 0px 7.15% 0px 7.15%;
+    @media (min-width: 768px) {
+      margin: 0px 15.17% 0px 15.17%;
     }
-    &__box {
-        box-shadow: 0px 8px 30px 0px #D414431A;
-        border-radius: 24px;
-        background-color: $contact-box-background;
+    &--middle {
+      padding-top: 25px;
+      padding-bottom: 25px;
+      border-top: 1px solid #e1e1e1;
+      border-bottom: 1px solid #e1e1e1;
     }
-    &__textbox {
-        margin: 0px 7.15% 0px 7.15%;
-        @media (min-width: 768px) {
-            margin: 0px 15.17% 0px 15.17%;
-        }
-        &--middle {
-            padding-top: 25px;
-            padding-bottom: 25px;
-            border-top: 1px solid #E1E1E1;
-            border-bottom: 1px solid #E1E1E1;
-        }
-        &--last {
-            padding-top: 25px;
-            padding-bottom: 43px;
-        }
+    &--last {
+      padding-top: 25px;
+      padding-bottom: 43px;
     }
-    &__place-type {
-        margin-top: 0px;
-        margin-bottom: 0px;
-        border-radius: 6px;
-        display: inline-block;
-        color: $text-contacts-place-type;
-        padding: 0px 25px;
-        line-height: 1.86;
-        letter-spacing: 0.04em;
-        &--cafe {
-            background-color: $cafe-background;
-        }
-        &--foodtruck {
-            background-color: $foodtruck-background;
-            @media (min-width: 768px) {
-                padding: 0px 7px;
-            }
-            @media (min-width: 627px) {
-                padding: 0px 16px;
-            }
-        }
-        @media (min-width: 768px) {
-            font-size: 16px;
-        }
+  }
+  &__place-type {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-radius: 6px;
+    display: inline-block;
+    color: $text-contacts-place-type;
+    padding: 0px 25px;
+    line-height: 1.86;
+    letter-spacing: 0.04em;
+    &--cafe {
+      background-color: $cafe-background;
     }
-    &__city {
-        margin-top: 25px;
-        margin-bottom: 10px;
-        font-size: 12px;
-        line-height: 1.86;
-        letter-spacing: 0.04em;
-        color: $text-contacts-headers;
-        @media (min-width: 768px) {
-            font-size: 14px;
-        }
-        @media (min-width: 1200px) {
-            font-size: 16px;
-        }
+    &--foodtruck {
+      background-color: $foodtruck-background;
+      @media (min-width: 768px) {
+        padding: 0px 7px;
+      }
+      @media (min-width: 627px) {
+        padding: 0px 16px;
+      }
     }
-    &__description {
-        line-height: 1.5;
-        margin-bottom: 25px;
-        @media (min-width: 768px) {
-         font-size: 14px;   
-        }
-        @media (min-width: 1200px) {
-            font-size: 16px;
-        }
+    @media (min-width: 768px) {
+      font-size: 16px;
     }
-    &__days {
-        font-size: 12px;
-        margin-top: 0px;
-        margin-bottom: 0px;
-        line-height: 1.86;
-        color: $text-contacts-headers;
-        @media (min-width: 768px) {
-            font-size: 14px;
-        }
-        @media (min-width: 1200px) {
-            font-size: 16px;
-        }
+  }
+  &__city {
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    line-height: 1.86;
+    letter-spacing: 0.04em;
+    color: $text-contacts-headers;
+    @media (min-width: 768px) {
+      font-size: 14px;
     }
-    &__hours {
-        line-height: 1.86;
-        color: $text-contacts-open-hours;
-        @media (min-width: 768px) {
-         font-size: 14px;   
-        }
-        @media (min-width: 1200px) {
-            font-size: 16px;
-        }
+    @media (min-width: 1200px) {
+      font-size: 16px;
     }
-    &__phone, &__mail {
-        width: 100%;
-        display: inline-block;
-        line-height: 1.5;
-        text-decoration: none;
-        color: $text-contacts-main;
-        @media (min-width: 627px) {
-         font-size: 14px;   
-        }
-        @media (min-width: 1200px) {
-            font-size: 16px;
-        }
+  }
+  &__description {
+    line-height: 1.5;
+    margin-bottom: 25px;
+    @media (min-width: 768px) {
+      font-size: 14px;
     }
+    @media (min-width: 1200px) {
+      font-size: 16px;
+    }
+  }
+  &__days {
+    font-size: 12px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    line-height: 1.86;
+    color: $text-contacts-headers;
+    @media (min-width: 768px) {
+      font-size: 14px;
+    }
+    @media (min-width: 1200px) {
+      font-size: 16px;
+    }
+  }
+  &__hours {
+    line-height: 1.86;
+    color: $text-contacts-open-hours;
+    @media (min-width: 768px) {
+      font-size: 14px;
+    }
+    @media (min-width: 1200px) {
+      font-size: 16px;
+    }
+  }
+  &__phone,
+  &__mail {
+    width: 100%;
+    display: inline-block;
+    line-height: 1.5;
+    text-decoration: none;
+    color: $text-contacts-main;
+    @media (min-width: 627px) {
+      font-size: 14px;
+    }
+    @media (min-width: 1200px) {
+      font-size: 16px;
+    }
+  }
 }
 
 .contact-button {
-    font-weight: 700;
-    font-size: 16px;
-    display: block;
-    margin: 0px auto;
-    border: none; 
-    width: 161.45px;
-    border-radius: 22px;
-    padding: 15px 0px;
-    transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    &:hover, &:focus {
-        cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  display: block;
+  margin: 0px auto;
+  border: none;
+  width: 161.45px;
+  border-radius: 22px;
+  padding: 15px 0px;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    cursor: pointer;
+  }
+  &--locations {
+    color: $text-our-locations;
+    background-color: $our-locations-background;
+    margin-top: 54px;
+    margin-bottom: 10px;
+    @media (min-width: 768px) {
+      display: inline;
+      margin-right: 7.25px;
     }
-    &--locations {
-        color: $text-our-locations;
-        background-color: $our-locations-background;
-        margin-top: 54px;
-        margin-bottom: 10px;
-        @media (min-width: 768px) {
-            display: inline;
-            margin-right: 7.25px;
-        }
+  }
+  &--franchise {
+    color: $text-franchise;
+    background-color: $franchise-background;
+    &:hover,
+    &:focus {
+      background-color: $franchise-hover;
     }
-    &--franchise {
-        color: $text-franchise;
-        background-color: $franchise-background;
-        &:hover, &:focus {
-            background-color: $franchise-hover;
-        }
-        @media (min-width: 768px) {
-            display: inline;
-            margin-left: 7.25px;
-        }
+    @media (min-width: 768px) {
+      display: inline;
+      margin-left: 7.25px;
     }
-    &__text {
-        padding-right: 5px;
-    }
+  }
+  &__text {
+    padding-right: 5px;
+  }
+}
+
+.modal__map {
+  width: 50vw;
+  height: 50vh;
+  max-width: 100%;
+  top: 25%;
+}
+
+.map-close {
+  z-index: 10;
 }
