@@ -81,7 +81,7 @@
         />
       </svg>
     </button>
-    <button class="contact-button contact-button--franchise" type="button">
+    <button class="contact-button contact-button--franchise" type="button" data-franchise-open>
       <span class="contact-button__text">Franchise </span
       ><svg width="7" height="10" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path
@@ -135,4 +135,45 @@
     </div>
   </div>
 </div>
+
+<!-- MODAL Franchise -->
+<div class="modal__container is-hidden-order" data-franchise-modal>
+  <div class="modal__background">
+    <div class="modal">
+      <form name="order" autocomplete="off" class="order">
+        <div class="order__container">
+          <img
+            class="order__logo"
+            src="images/header/icecream-logo.webp"
+            alt="logo"
+            srcset="
+              images/header/icecream-logo.webp     320w,
+              images/header/icecream-logo@2x.webp  480w,
+              images/header/icecream-logo@3x.webp 1280w
+            "
+            sizes="(min-width: 1280px) 1280px, (min-width: 480px) 480px, (min-width: 320px) 320px, 100vw"
+          />
+          <label for="order__name" class="order__label">
+            <span class="label__title">Imię</span>
+
+            <input class="order__input" id="order__name" type="text" name="name" required />
+          </label>
+          <label for="order__phone" class="order__label">
+            <span class="label__title">Telefon</span>
+
+            <input class="order__input" id="order__phone" type="tel" name="phone-number" />
+          </label>
+          <label for="order__email" class="order__label">
+            <span class="label__title">Email</span>
+
+            <input class="order__input" id="order__email" type="email" name="email" required />
+          </label>
+          <button type="submit" class="order__button">Zamów rozmowe</button>
+        </div>
+      </form>
+      <button type="button" id="cBtn" data-franchise-modal-close>X</button>
+    </div>
+  </div>
+</div>
+
 <script src="./scripts/map-modal.js"></script>
