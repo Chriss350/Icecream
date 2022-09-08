@@ -474,10 +474,10 @@ screen and (min-resolution: 3dppx) {
   padding-bottom: 2vh;
   padding-left: 2vw;
   padding-right: 2vw;
-  text-indent: clamp(.8rem, 1.6vh, 1.5rem);
+  text-indent: clamp(.8rem, 1.6vh, 1.1rem);
   text-align: justify;
-  font-size: clamp(.9rem, 1.5vw, 2rem);
-  line-height: clamp(1.1rem, 3vw, 1.96rem);
+  font-size: clamp(.9rem, 1.5vw, 1rem);
+  line-height: clamp(1.1rem, 3vw, 1.8rem);
   letter-spacing: .03em;
 
   &::first-letter {
