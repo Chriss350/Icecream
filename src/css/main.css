@@ -1143,13 +1143,13 @@ body {
   margin: 66px 10% 0px 10%;
 }
 
-.read-more {
+.read-more-button {
   background-color: rgba(1, 1, 1, 0);
   border-color: rgba(1, 1, 1, 0);
   margin: 41px auto;
   z-index: 6;
 }
-.read-more:hover {
+.read-more-button:hover {
   cursor: pointer;
 }
 
@@ -1256,6 +1256,7 @@ p {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.31;
+  cursor: pointer;
 }
 .div-item__btn:hover {
   background-color: #ECEBEB;
@@ -2075,12 +2076,35 @@ ul {
   opacity: 0;
 }
 
-.products-section {
+.contacts-section {
+  position: relative;
   background-image: linear-gradient(to bottom, #ffffff 5.29%, #fff5f6 5.29%, #fff5f6);
 }
 @media (min-width: 768px) {
-  .products-section {
+  .contacts-section {
     background-image: linear-gradient(to bottom, #ffffff 22.5%, #fff5f6 22.5%, #fff5f6);
+  }
+}
+.contacts-section__splashes-left {
+  display: none;
+}
+@media (min-width: 1200px) {
+  .contacts-section__splashes-left {
+    display: block;
+    position: absolute;
+    top: 306px;
+    left: 0;
+  }
+}
+.contacts-section__splashes-right {
+  display: none;
+}
+@media (min-width: 1200px) {
+  .contacts-section__splashes-right {
+    display: block;
+    position: absolute;
+    top: 431px;
+    right: 0;
   }
 }
 
