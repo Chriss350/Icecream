@@ -1556,7 +1556,7 @@ p {
   text-align: center;
   font-weight: 400;
   font-size: clamp(0.8rem, 2vw, 2rem);
-  line-height: 1.145;
+  line-height: 1.14;
   color: #FFA5BA;
   padding-top: 2vh;
   font-family: "Titan One";
@@ -1590,10 +1590,10 @@ p {
   padding-bottom: 2vh;
   padding-left: 2vw;
   padding-right: 2vw;
-  text-indent: clamp(0.8rem, 1.6vh, 1.5rem);
+  text-indent: clamp(0.8rem, 1.6vh, 1.1rem);
   text-align: justify;
-  font-size: clamp(0.9rem, 1.5vw, 2rem);
-  line-height: clamp(1.1rem, 3vw, 1.96rem);
+  font-size: clamp(0.9rem, 1.5vw, 1rem);
+  line-height: clamp(1.1rem, 3vw, 1.8rem);
   letter-spacing: 0.03em;
 }
 .read-more__text::first-letter {
