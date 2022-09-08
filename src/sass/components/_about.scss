@@ -349,6 +349,13 @@ screen and (min-resolution: 3dppx) {
   }
 }
 
+@media screen and (min-width: 2200px) {
+  .about {
+    background-position: right 50% bottom -140px;
+    background-size: 100% 94vh;
+  }
+}
+
 // SECTION ABOUT MODAL READ MORE
 .about-read-more {
   z-index: 100;
@@ -367,6 +374,7 @@ screen and (min-resolution: 3dppx) {
 
 .about-read-more__modal {
   position: absolute;
+  overflow: hidden;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -423,30 +431,31 @@ screen and (min-resolution: 3dppx) {
 // ABOUT READ MORE TEXT AREA 
 .read-more {
   position: relative;
-  margin-top: 50px;
-  margin-bottom: 20px;
+  height: 70vh;
+  margin-top: 40px;
+  padding-bottom: clamp(4vh, 5vh, 6vh);
 }
 
 .read-more__subtitle {
   text-align: center;
   font-weight: 400;
-  font-size: 18px;
+  font-size: clamp(0.8rem, 2vw, 2rem);
   line-height: 1.145;
   color: $aboutSubtitle;
-  padding-top: 2vh;
+  padding-top: clamp(1.5vh, 2vh, 3vh);
   font-family: 'Titan One';
   text-transform: uppercase;
 }
 
 .read-more__title {
   text-align: center;
-  margin-top: 2vh;
-  margin-left: auto;
+  margin-top: clamp(0.6vh, 1.6vh, 3vh);
+  margin-bottom: clamp(0.6vh, 2.5vh, 3.6vh);
+  margin-right: auto;
   margin-left: auto;
   width: 95%;
-  height: 76px;
   font-weight: 400;
-  font-size: 34px;
+  font-size: clamp(1.2rem, 3vw, 5rem);
   line-height: 1.145;
   color: $aboutTitleAndButtonText;
   font-family: 'Titan One';
@@ -457,106 +466,91 @@ screen and (min-resolution: 3dppx) {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  // padding-top: 30px;
   max-width: calc(100% - 50px);
   overflow: auto;
-  height: 50%;
-  max-height: 25vh;
 }
 
-
 .read-more__text {
-  padding-bottom: 5px;
-  text-indent: 20px;
+  padding-bottom: 2vh;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  text-indent: clamp(.8rem, 1.6vh, 1.5rem);
   text-align: justify;
-  font-size: 0.8em;
-  line-height: 1.96;
-  letter-spacing: 0.03em;
+  font-size: clamp(.9rem, 1.5vw, 2rem);
+  line-height: clamp(1.1rem, 3vw, 1.96rem);
+  letter-spacing: .03em;
 
   &::first-letter {
     font-size: 2em;
+  }
+
+  &:last-child {
+    margin-bottom: 20px;
   }
 }
 
 @media screen and (max-width:479px) {
   .about-read-more__modal {
-    width: 80%;
-    min-width: calc(320px - 60px);
-    max-width: 450px;
-    height: 70%;
-    max-height: 460px;
-  }
-
-  .read-more__title {
-    height: auto;
-    margin-bottom: 4vh;
+    width: clamp(calc(320px - 15%), 80%, 80vw);
+    height: clamp(calc(100% - 30px), 80%, 60vh);
   }
 
   .read-more__text-box {
     overflow: auto;
-    max-height: 26vh;
+    margin-bottom: 3vh;
+    min-height: 40vh;
+    max-height: 48vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
   }
 
-  .read-more__text {
-    text-align: justify;
-    font-size: 0.8em;
-    line-height: 1.5;
-    letter-spacing: 0.03em;
-  }
 }
 
-@media screen and (min-width:480px) and (max-width:1199px) {
+@media screen and (min-width:480px) and (max-width:767px) {
   .about-read-more__modal {
-    width: 450px;
-    height: 85%;
-    max-height: 480px;
-  }
-
-  .read-more__subtitle {
-    padding-top: 2vh;
-  }
-
-  .read-more__title {
-    height: auto;
-    margin-bottom: 4vh;
+    width: clamp(384px, 70%, 70vw);
+    height: max(100px, 80%, 80vh);
   }
 
   .read-more__text-box {
-    overflow: auto;
-    max-height: 30vh;
+    margin-bottom: 3vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    min-height: 100px;
+    max-height: 48vh;
+  }
+
+}
+
+@media screen and (min-width:768px) and (max-width:1279px) {
+  .about-read-more__modal {
+    width: clamp(538px, 70%, 70vw);
+    height: clamp(200px, 80%, 80vh);
+  }
+
+  .read-more__text-box {
+    padding-left: 25px;
+    padding-right: 25px;
+    max-height: 48vh;
   }
 
   .read-more__text {
     padding-left: 10px;
     padding-right: 10px;
-    font-size: 0.8em;
-    line-height: 1.50;
-    letter-spacing: 0.03em;
   }
 }
 
-@media screen and (min-width:1200px) {
+@media screen and (min-width:1280px) {
   .about-read-more__modal {
-    width: 528px;
-    height: 500px;
+    width: clamp(680px, 60%, 60vw);
+    height: clamp(200px, 80%, 80vh);
     animation: slideIn 750ms cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
   }
 
   .read-more__text-box {
-    overflow: auto;
-    max-height: 30vh;
-  }
-
-  .read-more__text {
     padding-left: 2vw;
     padding-right: 2vw;
-    font-size: 0.8em;
-    line-height: 1.5;
-    letter-spacing: 0.03em;
-  }
-
-  .about__title {
-    margin-bottom: 4vh;
+    max-height: 48vh;
   }
 
   .is-hidden {
@@ -565,6 +559,7 @@ screen and (min-resolution: 3dppx) {
     }
   }
 }
+
 
 @keyframes fadeIn {
   0% {
