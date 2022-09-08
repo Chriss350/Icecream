@@ -1556,7 +1556,7 @@ p {
   text-align: center;
   font-weight: 400;
   font-size: clamp(0.8rem, 2vw, 2rem);
-  line-height: 1.145;
+  line-height: 1.14;
   color: #FFA5BA;
   padding-top: 2vh;
   font-family: "Titan One";
